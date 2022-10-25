@@ -1,10 +1,17 @@
-- 👋 Hi, I’m @stavrosgreece
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👋 Hi, I’m ***Stavros Orfanoudakis*** 
 
-<!---
-stavrosgreece/stavrosgreece is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+          MSc, School of Electrical and Computer Engineering,
+          Technical University of Crete
+
+- 👀 I’m interested in:
+
+        -  Machine Learning for real-life applications
+        - A.I. in Biomedical applications
+        - Computer Vision
+        - Multi-Agent Systems
+        - A.I. in the Smart Grid
+
+- 📫  You can reach me at:
+	
+
+     sorfanoudakis< at >tuc.gr
