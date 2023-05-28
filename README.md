@@ -11,4 +11,4 @@
         - Multi-Agent Systems
         - A.I. in the Smart Grid -->
 
-- 📫  You can reach me at: sorfanoudakis< at >tuc.gr
+- 📫  You can reach me at: s.orfanoudakis< at >tudelft.nl
