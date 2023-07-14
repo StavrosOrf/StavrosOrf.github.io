@@ -1,14 +1,17 @@
 - 👋 Hi, I’m ***Stavros Orfanoudakis*** 
 
-          MSc, School of Electrical and Computer Engineering,
+          -PhD Candidate at Delft University of Technology,
+            EEMCS, Intelligent Electrical Power Grids
+  
+          -MSc, School of Electrical and Computer Engineering,
           Technical University of Crete
 
 <!-- - 👀 I’m interested in:
 
         - Machine Learning for real-life applications
-        - A.I. in Biomedical applications
-        - Computer Vision
-        - Multi-Agent Systems
         - A.I. in the Smart Grid -->
+        - Multi-Agent Systems
+        - Computer Vision
+
 
 - 📫  You can reach me at: s.orfanoudakis< at >tudelft.nl
