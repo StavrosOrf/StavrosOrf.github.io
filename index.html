@@ -1,75 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stavros Orfanoudakis - About</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stavros Orfanoudakis Webpage</title>
+  <link rel="icon" type="image/png" href="figures/letter-s.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+  integrity="sha512-Fo3rlrZj/k7ujTTXRNw5NJ7B1A0sG85md+v6cBN39XJscH46FIiUq99J3Bht9GdK+z0qH3w/JCHtBt+l4uTOBw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">about</a></li>
-        <li><a href="bio.html">bio</a></li>
-        <li><a href="projects.html">projects</a></li>
-        <li><a href="publications.html">publications</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Tab Navigation -->
+  <div class="tab">
+    <button class="tablinks active" data-tab="home">Home</button>
+    <button class="tablinks" data-tab="publications">Publications</button>
+    <button class="tablinks" data-tab="somethingelse">Projects</button>
+  </div>
 
-  <!-- Main content -->
-  <main>
-    <h1>Stavros Orfanoudakis</h1>
-    <h2>PhD at [Your Institution]</h2>
+  <!-- Container for Tab Content -->
+  <div id="content">
+    <!-- Tab content will be loaded here -->
+  </div>
 
-    <section>
-      <img 
-        src="figures/stavros.png" 
-        alt="Photo of Stavros Orfanoudakis" 
-        class="profile-pic"
-      />
-      <p>
-        Welcome to my personal webpage! I am currently a PhD at 
-        the [Department or School] of [Institution]. My research explores how we 
-        can leverage AI and ML techniques in real-world scenarios, focusing on 
-        reliability, safety, and robust decision making.
-      </p>
-    </section>
-
-    <section>
-      <h3>Office Location</h3>
-      <p>
-        Office: [e.g. MF 7.092, MetaForum]<br/>
-        [Additional address details if you wish]
-      </p>
-    </section>
-
-    <section>
-      <h3>Research Interests</h3>
-      <p>
-        My current interests revolve around safe reinforcement learning, 
-        constrained optimization, and robust planning algorithms. I'm working on 
-        methods to guarantee certain performance metrics under uncertainty, 
-        ensuring that catastrophic outcomes are avoided.
-      </p>
-    </section>
-
-    <section>
-      <h3>News</h3>
-      <ul>
-        <li><strong>2025</strong>: Our papers “Title #1” and “Title #2” have been accepted at [Conference Name].</li>
-        <!-- Add more news items as needed -->
-      </ul>
-    </section>
-  </main>
-
-  <!-- Footer -->
+  <!-- Fixed Footer -->
   <footer>
-    <p>
-      &copy; 2025 Stavros Orfanoudakis. Powered by simple static HTML/CSS. Last updated: Feb 13, 2025.
-    </p>
+    <div class="footer-content">
+      <span>&copy; 2025 Stavros Orfanoudakis | PhD Researcher</span>
+      <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank" title="Google Scholar">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
