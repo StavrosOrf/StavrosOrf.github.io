@@ -84,7 +84,7 @@ a:hover {
   margin-top: 40px; /* Adjust the value as needed based on your tab bar height */
   padding-top: 80px; /* Adjust the value as needed based on your tab bar height */
   padding: 20px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   animation: fadeEffect 0.5s;
 }
 
@@ -376,5 +376,56 @@ footer {
   text-decoration: underline;
 }
 
+.project-slice {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 0;  
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  background-color: var(--tab-bg);
+  border-radius: 5px;
+  /* justify-content: space-between; */
+  text-align: justify;
+}
+.project-slice:last-of-type {
+  border-bottom: none;
+}
 
+.project-slice p {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* Image on the left */
+.project-slice img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 20%;
+  align-self: center;
+}
+
+/* Info on the right */
+.project-info {
+  max-width: 600px;
+}
+
+.project-info h2 {
+  margin: 0 0 10px;
+  font-size: 1.4em;
+}
+.project-info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Supervised students section */
+h1 {
+  margin-top: 30px;
+  font-size: 1.8em;
+}
 
