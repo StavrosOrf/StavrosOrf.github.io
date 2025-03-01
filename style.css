@@ -135,6 +135,12 @@ footer {
   margin-left: 35%;
 }
 
+.footer-created {
+  align-self: right;
+  left: 100%;
+  margin-left: 10px;
+}
+
 .social-links a {
   color: (var(--tab-text));
   margin-left: 15px;
