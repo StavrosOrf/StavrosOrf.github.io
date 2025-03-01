@@ -4,7 +4,7 @@
 :root {
   --bg-color: #e8eae0;
   --text-color: #000000;
-  --tab-bg: #c2c69e;
+  --tab-bg: #b4b4b0;
   --tab-text: #333;
   /* Add more custom properties for backgrounds, borders, etc. */
 }
@@ -77,7 +77,7 @@ a:hover {
 }
 
 .tab button.active {
-  background-color: #1d1d1d;
+  background-color: #838181d3;
 }
 
 #content {
