@@ -1,25 +1,164 @@
 <!-- home.html -->
-<h1>Stavros Orfanoudakis</h1>
-<img src="figures/stavros_profile.jpeg" alt="Profile Picture" class="profile-pic">
-<p style="text-align: center; max-width: 600px; margin: 0 auto;">
-  I am a dedicated researcher in Computer Science with a focus on Machine Learning and Artificial Intelligence. My work bridges theory and practical applications in data-driven technologies.
-</p>
+<div class="home-container">
+  <!-- Intro Section -->
+  <section class="intro-section">
+    <div class="profile-and-interests">
+      <img
+        src="figures/stavros_profile.jpeg"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+      <ul class="research-interests">
+        <h2>Research Interests</h2>
+        <li>Reinforcement Learning</li>
+        <li>Applied Machine Learning</li>
+        <li>Energy Transition & Power Systems</li>
+        <li>Computer Vision</li>
+      </ul>
+    </div>
+    <div class="intro-text">
+      <h1>Stavros Orfanoudakis | Ph.D. Researcher</h1>
+      <p>
+        I received my Diploma and M.Sc. degrees in Electrical and Computer
+        engineering from the Technical University of Crete, Greece, in 2020 and
+        2022, respectively. During my studies, I developed an autonomous
+        power-trading agent that secured first place in the international Power
+        Trading Agent Competition (PowerTAC) in 2020. Since April 2023, I have
+        been a Ph.D. Researcher at the Intelligent Electrical Power Grids (IEPG)
+        Group, Delft University of Technology (TU Delft), The Netherlands. My
+        research focuses on developing scalable machine learning algorithms,
+        including reinforcement learning, to optimize city-wide electric vehicle
+        charging schedules, contributing to the DRIVE2X project.
+      </p>
+    </div>
+  </section>
 
-<h2>Research Interests</h2>
-<ul style="max-width: 600px; margin: 0 auto;">
-  <li>Machine Learning & Deep Learning</li>
-  <li>Artificial Intelligence Ethics</li>
-  <li>Data Mining & Big Data</li>
-</ul>
+  <!-- News Section with Different Background Color -->
+  <h2>News</h2>
+  <section class="news-section">
+    <div class="timeline-container">
+      <div class="timeline">
+        <!-- News Item 1 -->
+        <div class="timeline-date">2024</div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p>
+              Published
+              <a
+                href="https://ieeexplore-ieee-org.tudelft.idm.oclc.org/document/10803908"
+                target="_blank"
+                rel="noopener noreferrer"
+                >EV2Gym</a
+              >, the first chapter of my PhD work in
+              <em>IEEE Transactions on Intelligent Transportation Systems</em>.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <!-- <div class="timeline-date">2023</div> -->
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p>
+              Attended the 7th Advanced Course on Data Science & Machine
+              Learning, June 10-14, 2024.
+            </p>
+          </div>
+        </div>
 
-<h2>News</h2>
-<p style="text-align: center; max-width: 600px; margin: 0 auto;">
-  Latest update: Our team recently published a breakthrough study in the Journal of AI Research. Stay tuned for more updates on our upcoming projects!
-</p>
+        <!-- News Item 2 -->
+        <div class="timeline-date">2023</div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p>
+              Started my PhD at TU Delft at the Intelligent Electrical Power
+              Grids Group!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>Highlighted Publications</h2>
-<ul style="max-width: 600px; margin: 0 auto;">
-  <li>"Deep Learning in Action" – A novel approach to neural networks.</li>
-  <li>"AI Ethics: A Modern Dilemma" – Examining the moral aspects of AI development.</li>
-  <li>"Data-Driven Insights" – Harnessing big data for real-world applications.</li>
-</ul>
+  <!-- Highlighted Publications Section -->
+  <h2>Highlighted Publications</h2>
+  <section class="publications-section">
+
+    <div class="publication">
+      <div class="pub-details">
+        <strong
+          >"GNN-DT: Graph Neural Network Enhanced Decision Transformer for
+          Efficient Optimization in Dynamic Environments"</strong
+        ><br />
+        <u>Stavros Orfanoudakis</u>, Nanda Kishor Panda, Peter Palensky, Pedro
+        P. Vergara<br />
+        Preprint, February 2025
+      </div>
+      <div class="pub-links">
+        <!-- <a
+          href="https://doi.org/10.21203/rs.3.rs-GNNDT"
+          target="_blank"
+          title="Published Version"
+        >
+          <i class="fas fa-external-link-alt"></i>
+        </a> -->
+        <a
+          href="https://arxiv.org/abs/2502.01778"
+          target="_blank"
+          title="arXiv Version"
+        >
+          <img src="figures/arxiv_logo.png" alt="arXiv" class="arxiv-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="publication">
+      <div class="pub-details">
+        <strong
+          >"Scalable Reinforcement Learning for Large-Scale Coordination of
+          Electric Vehicles Using Graph Neural Networks"</strong
+        ><br />
+        <u>Stavros Orfanoudakis</u>, Valentin Robu, Edgar Mauricio Salazar
+        Duque, Peter Palensky, Pedro P. Vergara<br />
+        Preprint, November 2024
+      </div>
+      <div class="pub-links">
+        <a
+          href="https://www.researchsquare.com/article/rs-5504138/v1"
+          target="_blank"
+          title="Published Version"
+        >
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+    <div class="publication">
+      <div class="pub-details">
+        <strong
+          >"EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and
+          Benchmarking"</strong
+        ><br />
+        <u>Stavros Orfanoudakis</u>,Cesar Diaz-Londono, Yunus Emre Yılmaz, Peter
+        Palensky, Pedro P. Vergara<br />
+        <em>IEEE Transactions on Intelligent Transportation Systems</em>,
+        January 2024
+      </div>
+      <div class="pub-links">
+        <a
+          href="https://ieeexplore.ieee.org/document/10803908"
+          target="_blank"
+          title="Published Version"
+        >
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a
+          href="https://arxiv.org/abs/2404.01849"
+          target="_blank"
+          title="arXiv Version"
+        >
+          <img src="figures/arxiv_logo.png" alt="arXiv" class="arxiv-icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
