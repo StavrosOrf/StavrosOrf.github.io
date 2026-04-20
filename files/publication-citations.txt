@@ -1,0 +1,51 @@
+UNDER REVIEW
+
+Gao, S., Orfanoudakis, S., Hou, S., Palensky, P., & Vergara, P. P. (2026). Topology-Aware Graph Reinforcement Learning for Energy Storage Systems Optimal Dispatch in Distribution Networks. arXiv:2603.26264. Under review at Energy and AI.
+
+Gao, T., Orfanoudakis, S., Lin, N., Isufi, E., Daamen, W., & Hoogendoorn, S. P. (2026). Flow Matching Policy with Entropy Regularization. arXiv:2603.17685. Under review at ICML 2026.
+
+Orfanoudakis, S., & Vergara, P. P. (2026). SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control. Manuscript under review for IJCAI.
+
+Orfanoudakis, S., Oliehoek, F. A., Palensky, P., & Vergara, P. P. (2025). Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints. arXiv:2510.12335. Second revision at Applied Energy.
+
+Orfanoudakis, S., Palensky, P., & Vergara, P. P. (2025). Optimizing Electric Vehicles Charging Using Large Language Models and Graph Neural Networks. arXiv:2502.03067. Second revision at International Journal of Electrical Power and Energy Systems.
+
+JOURNAL PUBLICATIONS
+
+Orfanoudakis, S., Panda, N. K., Palensky, P., & Vergara, P. P. (2026). A graph neural network enhanced decision transformer for efficient optimization in dynamic smart charging environments. Energy and AI, 23, 100679. https://doi.org/10.1016/j.egyai.2026.100679
+
+Kaseb, Z., Orfanoudakis, S., Vergara, P. P., & Palensky, P. (2026). Physics-informed neural network with adaptive activation for power flow. International Journal of Electrical Power and Energy Systems, 174, 111525. https://doi.org/10.1016/j.ijepes.2025.111525
+
+Diaz-Londono, C., Orfanoudakis, S., Vergara Barrios, P. P., Palensky, P., Ruiz, F., & Gruosso, G. (2026). Open source algorithms for maximizing V2G flexibility based on model predictive control. Electric Power Systems Research, 250, 112082. https://doi.org/10.1016/j.epsr.2025.112082
+
+Esser, M., Orfanoudakis, S., Homaee, O., Vahidinasab, V., Vergara, P. P., & Spina, A. (2025). High-temporal-resolution dataset of uni-, bidirectional, and dynamic electric vehicle charging profiles. Scientific Data, 12(1), 1192. https://doi.org/10.1038/s41597-025-05524-5
+
+Orfanoudakis, S., Robu, V., Salazar, E. M., Palensky, P., & Vergara, P. P. (2025). Scalable reinforcement learning for large-scale coordination of electric vehicles using graph neural networks. Communications Engineering, 4(1), 118. https://doi.org/10.1038/s44172-025-00457-8
+
+Orfanoudakis, S., Diaz-Londono, C., Yilmaz, Y. E., Palensky, P., & Vergara, P. P. (2025). EV2Gym: A flexible V2G simulator for EV smart charging research and benchmarking. IEEE Transactions on Intelligent Transportation Systems, 26(2), 2410-2421. https://doi.org/10.1109/TITS.2024.3510945
+
+Kallinteris, A., Orfanoudakis, S., & Chalkiadakis, G. (2024). A comprehensive analysis of agent factorization and learning algorithms in multiagent systems. Autonomous Agents and Multi-Agent Systems, 38(2), 27. https://doi.org/10.1007/s10458-024-09662-9
+
+Lin, N., Orfanoudakis, S., Ordonez Cardenas, N., Giraldo, J. S., & Vergara, P. P. (2024). PowerFlowNet: Power flow approximation using message passing graph neural networks. International Journal of Electrical Power and Energy Systems, 160, 110112. https://doi.org/10.1016/j.ijepes.2024.110112
+
+Vogiatzis, A., Orfanoudakis, S., Chalkiadakis, G., Moirogiorgou, K., & Zervakis, M. (2023). Novel meta-learning techniques for the multiclass image classification problem. Sensors, 23(1), 9. https://doi.org/10.3390/s23010009
+
+CONFERENCE PUBLICATIONS
+
+Orfanoudakis, S., Elders, B., Palensky, P., & Vergara, P. P. (2026). Can AI Accelerate EV Dispatch? Workshop paper, ECML PKDD Workshop on Machine Learning for Power Systems.
+
+Eland, R., Orfanoudakis, S., & Vergara, P. P. (2026). Safe Reinforcement Learning for V2G-Enabled Electric Vehicle Aggregators. Workshop paper, ECML PKDD Workshop on Machine Learning for Power Systems.
+
+Ravanbach, B., Turhan, E., Wulff, N., Orfanoudakis, S., Vergara, P. P., Vahidinasab, V., Dias, L., & Mendes, G. (2024). A Dynamic Prediction Tool for Vehicle-to-Grid Operation and Planning. In Proceedings of the 2024 IEEE 22nd Mediterranean Electrotechnical Conference (MELECON) (pp. 610-615). IEEE. https://doi.org/10.1109/MELECON56669.2024.10608538
+
+Martinez, N. A., Orfanoudakis, S., Vergara, P. P., & Franco, J. F. (2024). Energy Storage Systems Planning in the Electric Distribution System Considering the Grow of PV Penetration. In Proceedings of the 24th EEEIC International Conference on Environment and Electrical Engineering and 8th I&CPS Europe. IEEE. https://doi.org/10.1109/EEEIC/ICPSEurope61470.2024.10751415
+
+Yilmaz, Y. E., Orfanoudakis, S., & Vergara, P. P. (2024). Reinforcement Learning for Optimized EV Charging Through Power Setpoint Tracking. In IEEE PES Innovative Smart Grid Technologies Europe (ISGT Europe 2024). IEEE. https://doi.org/10.1109/ISGTEUROPE62998.2024.10863457
+
+Orfanoudakis, S., & Chalkiadakis, G. (2023). A Novel Aggregation Framework for the Efficient Integration of Distributed Energy Resources in the Smart Grid. In Proceedings of the International Joint Conference on Autonomous Agents and Multiagent Systems (AAMAS) (pp. 2514-2516).
+
+Kallinteris, A., Orfanoudakis, S., & Chalkiadakis, G. (2022). The Performance Impact of Combining Agent Factorization with Different Learning Algorithms for Multiagent Coordination. In Proceedings of the 12th Hellenic Conference on Artificial Intelligence (SETN 2022). ACM. https://doi.org/10.1145/3549737.3549773
+
+Moirogiorgou, K., Raptopoulos, F., Livanos, G., Orfanoudakis, S., Papadogiorgaki, M., Zervakis, M., & Maniadakis, M. (2022). Intelligent robotic system for urban waste recycling. In Proceedings of the 2022 IEEE International Conference on Imaging Systems and Techniques (IST). IEEE. https://doi.org/10.1109/IST55454.2022.9827769
+
+Orfanoudakis, S., Kontos, S., Akasiadis, C., & Chalkiadakis, G. (2021). Aiming for Half Gets You to the Top: Winning PowerTAC 2020. In A. Rosenfeld & N. Talmon (Eds.), Multi-Agent Systems -- 18th European Conference, EUMAS 2021, Revised Selected Papers (pp. 144-159). Springer. https://doi.org/10.1007/978-3-030-82254-5_9
