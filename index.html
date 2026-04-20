@@ -23,10 +23,10 @@
     </a>
     <div class="so-nav__actions">
       <nav class="so-nav__tabs">
-        <a class="so-nav__tab is-active" href="index.html">Home</a>
-        <a class="so-nav__tab" href="publications.html">Publications</a>
-        <a class="so-nav__tab" href="projects.html">Projects</a>
-        <a class="so-nav__tab" href="teaching.html">Teaching</a>
+        <a class="so-nav__tab is-active" href="#home">Home</a>
+        <a class="so-nav__tab" href="#publications">Publications</a>
+        <a class="so-nav__tab" href="#projects">Projects</a>
+        <a class="so-nav__tab" href="#teaching">Teaching</a>
       </nav>
       <button class="so-btn so-btn--secondary so-btn--sm so-theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
         <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
@@ -38,15 +38,16 @@
 
 <main class="so-page">
 
-  <section class="so-intro">
+  <section id="home" class="so-panel so-panel--home so-panel--active" data-nav-section>
+<section class="so-intro">
     <div class="so-intro__portrait">
       <img src="figures/stavros_profile.jpeg" alt="Stavros Orfanoudakis" />
     </div>
     <div class="so-intro__text">
-      <h1 class="so-h1">Stavros <em>Orfanoudakis</em></h1>
+      <h1 class="so-h1">Stavros Orfanoudakis</h1>
       <div class="so-intro__role">Research Fellow · Power Systems Laboratory, ETH Zürich</div>
       <p>
-        I am a Research Fellow at the <em>Power Systems Laboratory</em>, ETH Zürich, where I work on reinforcement learning, graph neural networks, large language models, and physics-informed machine learning for power and energy systems, with a focus on building scalable and trustworthy AI methods for real-world energy-system operation.
+        I am a Research Fellow at the <em>Power Systems Laboratory</em>, ETH Zürich, working on reinforcement learning, graph neural networks, large language models, and physics-informed machine learning for power and energy systems, with a focus on scalable and trustworthy AI for real-world operation.
       </p>
     </div>
     <div class="so-intro__interests">
@@ -87,17 +88,20 @@
     </div>
     <figure class="so-intro__quote">
       <blockquote>
-        “I envision AI-enabled energy systems that are not only powerful in theory, but also trustworthy, adaptive, and ready for real-world complexity.”
+        “I envision intelligent AI systems as a key force in the energy transition: autonomous, resilient, and trustworthy in real-world operation.”
       </blockquote>
     </figure>
   </section>
+</section>
+
+<section class="so-panel so-panel--highlights">
 
   <hr class="so-rule" />
 
   <section class="so-section">
     <div class="so-sectionhead">
       <div class="so-eyebrow">News</div>
-      <h2 class="so-h2">Recent</h2>
+      <h2 class="so-h2">Recent milestones</h2>
     </div>
     <div class="so-timeline">
       <div class="so-tl-item">
@@ -106,7 +110,7 @@
       </div>
       <div class="so-tl-item">
         <div class="so-tl-year">JAN 2026</div>
-        <div class="so-tl-body">Awarded <em>Best PowerWeb Paper Award 2025</em> and nominated for Best Energy Paper for our <a href="publications.html">Graph-RL EV coordination</a> work.</div>
+        <div class="so-tl-body">Awarded <em>Best PowerWeb Paper Award 2025</em> and nominated for Best Energy Paper for our <a href="#publications">Graph-RL EV coordination</a> work.</div>
       </div>
       <div class="so-tl-item">
         <div class="so-tl-year">NOV 2025</div>
@@ -137,9 +141,9 @@
     <div class="so-sectionhead so-sectionhead--split">
       <div>
         <div class="so-eyebrow">Selected publications</div>
-        <h2 class="so-h2">Research highlights</h2>
+        <h2 class="so-h2">Research contributions</h2>
       </div>
-      <a class="so-btn so-btn--secondary" href="publications.html">See all publications →</a>
+      <a class="so-btn so-btn--secondary" href="#publications">See all publications →</a>
     </div>
     <div class="so-publist">
 
@@ -214,7 +218,554 @@
 
     </div>
   </section>
+  </section>
 
+  <section id="publications" class="so-panel so-panel--publications so-publications" data-nav-section>
+
+
+  <div class="so-pagehead">
+    <div class="so-eyebrow">Archive</div>
+    <h1 class="so-h1">Publications</h1>
+    <p class="so-lead">
+      Journal articles, peer-reviewed conference papers, and preprints under review.
+    </p>
+  </div>
+
+  <section class="so-year">
+    <div class="so-year__head">
+      <span class="so-year__num">Under review</span>
+      <span class="so-year__count">Preprints · 5</span>
+    </div>
+    <div class="so-publist">
+      <div class="so-pubyear">2026</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2603.26264" target="_blank" rel="noopener">"Topology-Aware Graph Reinforcement Learning for Energy Storage Systems Optimal Dispatch in Distribution Networks"</a></h3>
+        <div class="so-pub__byline">Shuyi Gao, <u>Stavros Orfanoudakis</u>, Shengren Hou, Peter Palensky, Pedro P. Vergara.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2603.26264" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="gao2026topologyaware"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2603.17685" target="_blank" rel="noopener">"Flow Matching Policy with Entropy Regularization"</a></h3>
+        <div class="so-pub__byline">Ting Gao, <u>Stavros Orfanoudakis</u>, Nan Lin, Elvin Isufi, Winnie Daamen, Serge P. Hoogendoorn.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2603.17685" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="gao2026flowmatching"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title">"SAVGO: Learning State–Action Value Geometry with Cosine Similarity for Continuous Control"</h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Pedro P. Vergara.</div>
+        <div class="so-pub__links">
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2026savgo"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2025</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2510.12335" target="_blank" rel="noopener">"Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Frans A. Oliehoek, Peter Palensky, Pedro P. Vergara.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2510.12335" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/EV2Gym_PI-TD3" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2025pirl"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2502.03067" target="_blank" rel="noopener">"Optimizing Electric Vehicles Charging Using Large Language Models and Graph Neural Networks"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Peter Palensky, Pedro P. Vergara.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2502.03067" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2025llmev"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="so-year">
+    <div class="so-year__head">
+      <span class="so-year__num">Journal publications</span>
+      <span class="so-year__count">Peer-reviewed · 9</span>
+    </div>
+    <div class="so-publist">
+      <div class="so-pubyear">2026</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1016/j.egyai.2026.100679" target="_blank" rel="noopener">"A Graph Neural Network-Enhanced Decision Transformer for Efficient Optimization in Dynamic Smart Charging Environments"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Nanda Kishor Panda, Peter Palensky, Pedro P. Vergara. <em>Energy and AI</em>, 2026.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1016/j.egyai.2026.100679" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/DT4EVs" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2026gnndt"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1016/j.ijepes.2025.111525" target="_blank" rel="noopener">"Physics-Informed Neural Network with Adaptive Activation for Power Flow"</a></h3>
+        <div class="so-pub__byline">Zeynab Kaseb, <u>Stavros Orfanoudakis</u>, Pedro P. Vergara, Peter Palensky. <em>International Journal of Electrical Power &amp; Energy Systems</em>, 2026.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1016/j.ijepes.2025.111525" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="kaseb2026pinn4pf"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub" id="pub-v2g-flexibility">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1016/j.epsr.2025.112082" target="_blank" rel="noopener">"Open-Source Algorithms for Maximizing V2G Flexibility Based on Model Predictive Control"</a></h3>
+        <div class="so-pub__byline">Cesar Diaz-Londono*, <u>Stavros Orfanoudakis</u>*, Pedro P. Vergara Barrios, Peter Palensky, Fredy Ruiz, Giambattista Gruosso. <em>Electric Power Systems Research</em>, 2026.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1016/j.epsr.2025.112082" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/CesarDiazLondono/MPC-G2V-V2G" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="diazlondono2026mpcv2g"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2025</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1038/s41597-025-05524-5" target="_blank" rel="noopener">"High-Temporal-Resolution Dataset of Uni-, Bidirectional, and Dynamic Electric Vehicle Charging Profiles"</a></h3>
+        <div class="so-pub__byline">Marcel Esser, <u>Stavros Orfanoudakis</u>, Omid Homaee, Vahid Vahidinasab, Pedro P. Vergara, Alfio Spina. <em>Nature Scientific Data</em>, 2025.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1038/s41597-025-05524-5" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="esser2025dataset"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <div class="so-pub__tags">
+          <span class="so-tag so-tag--honor">Editor's Choice 2025</span>
+          <span class="so-tag so-tag--honor">Best PowerWeb Paper Award 2025</span>
+        </div>
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1038/s44172-025-00457-8" target="_blank" rel="noopener">"Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Valentin Robu, Edgar M. Salazar Duque, Peter Palensky, Pedro P. Vergara. <em>Nature Communications Engineering</em>, 2025.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1038/s44172-025-00457-8" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/EV-GNN" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2025evgnn"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2024</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1109/TITS.2024.3510945" target="_blank" rel="noopener">"EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Cesar Diaz-Londono, Yunus E. Yılmaz, Peter Palensky, Pedro P. Vergara. <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1109/TITS.2024.3510945" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/EV2Gym" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2025ev2gym"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1007/s10458-024-09662-9" target="_blank" rel="noopener">"A Comprehensive Analysis of Agent Factorization and Learning Algorithms in Multiagent Systems"</a></h3>
+        <div class="so-pub__byline">Andreas Kallinteris*, <u>Stavros Orfanoudakis</u>*, Georgios Chalkiadakis. <em>Autonomous Agents and Multi-Agent Systems</em>, 2024.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1007/s10458-024-09662-9" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/MultiAgentLearning" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="kallinteris2024comprehensive"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1016/j.ijepes.2024.110112" target="_blank" rel="noopener">"PowerFlowNet: Power Flow Approximation Using Message Passing Graph Neural Networks"</a></h3>
+        <div class="so-pub__byline">Nan Lin*, <u>Stavros Orfanoudakis</u>*, Nathan Ordonez Cardenas, Juan S. Giraldo, Pedro P. Vergara. <em>International Journal of Electrical Power &amp; Energy Systems</em>, 2024.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1016/j.ijepes.2024.110112" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/PoweFlowNet" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="lin2024powerflownet"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2022</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.3390/s23010009" target="_blank" rel="noopener">"Novel Meta-Learning Techniques for the Multiclass Image Classification Problem"</a></h3>
+        <div class="so-pub__byline">Antonios Vogiatzis*, <u>Stavros Orfanoudakis</u>*, Georgios Chalkiadakis, Konstantia Moirogiorgou, Michalis Zervakis. <em>Sensors</em>, 2022.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.3390/s23010009" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="vogiatzis2023metalearning"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="so-year">
+    <div class="so-year__head">
+      <span class="so-year__num">Conference publications</span>
+      <span class="so-year__count">Peer-reviewed · 9</span>
+    </div>
+    <div class="so-publist">
+      <div class="so-pubyear">2026</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title">"Can AI Accelerate EV Dispatch?"</h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, B. Elders, Peter Palensky, Pedro P. Vergara. <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD), ML for Power Systems Workshop</em>, 2026.</div>
+        <div class="so-pub__links">
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2026dispatch"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub" id="pub-safe-rl-v2g">
+        <h3 class="so-pub__title">"Safe Reinforcement Learning for V2G-Enabled Electric Vehicle Aggregators"</h3>
+        <div class="so-pub__byline">Ruben Eland, <u>Stavros Orfanoudakis</u>, Pedro P. Vergara. <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD), ML for Power Systems Workshop</em>, 2026.</div>
+        <div class="so-pub__links">
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="eland2026saferl"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2024</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1109/MELECON56669.2024.10608538" target="_blank" rel="noopener">"A Dynamic Prediction Tool for Vehicle-to-Grid Operation and Planning"</a></h3>
+        <div class="so-pub__byline">Babak Ravanbach, Elif Turhan, Niklas Wulff, <u>Stavros Orfanoudakis</u>, Pedro P. Vergara, Vahid Vahidinasab, Luiz Dias, Goncalo Mendes. <em>IEEE Mediterranean Electrotechnical Conference (IEEE MELECON)</em>, 2024.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1109/MELECON56669.2024.10608538" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="ravanbach2024v2gtool"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1109/EEEIC/ICPSEurope61470.2024.10751415" target="_blank" rel="noopener">"Energy Storage Systems Planning in the Electric Distribution System Considering the Grow of PV Penetration"</a></h3>
+        <div class="so-pub__byline">Norberto A. Martinez, <u>Stavros Orfanoudakis</u>, Pedro P. Vergara, John F. Franco. <em>IEEE International Conference on Environment and Electrical Engineering and IEEE Industrial and Commercial Power Systems Europe (IEEE EEEIC/I&amp;CPS Europe)</em>, 2024.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1109/EEEIC/ICPSEurope61470.2024.10751415" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="martinez2024essplanning"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub" id="pub-power-setpoint">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1109/ISGTEUROPE62998.2024.10863457" target="_blank" rel="noopener">"Reinforcement Learning for Optimized EV Charging Through Power Setpoint Tracking"</a></h3>
+        <div class="so-pub__byline">Yunus E. Yılmaz, <u>Stavros Orfanoudakis</u>, Pedro P. Vergara. <em>IEEE PES Innovative Smart Grid Technologies Europe (IEEE PES ISGT Europe)</em>, 2024.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1109/ISGTEUROPE62998.2024.10863457" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="yilmaz2024powersetpoint"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2023</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://research.tudelft.nl/en/publications/a-novel-aggregation-framework-for-the-efficient-integration-of-di/" target="_blank" rel="noopener">"A Novel Aggregation Framework for the Efficient Integration of Distributed Energy Resources in the Smart Grid"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Georgios Chalkiadakis. <em>International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</em>, 2023.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://research.tudelft.nl/en/publications/a-novel-aggregation-framework-for-the-efficient-integration-of-di/" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2023aggregation"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2022</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1145/3549737.3549773" target="_blank" rel="noopener">"The Performance Impact of Combining Agent Factorization with Different Learning Algorithms for Multiagent Coordination"</a></h3>
+        <div class="so-pub__byline">Andreas Kallinteris, <u>Stavros Orfanoudakis</u>, Georgios Chalkiadakis. <em>Hellenic Conference on Artificial Intelligence (SETN)</em>, 2022.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1145/3549737.3549773" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/MultiAgentLearning" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="kallinteris2022factorization"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1109/IST55454.2022.9827769" target="_blank" rel="noopener">"Intelligent Robotic System for Urban Waste Recycling"</a></h3>
+        <div class="so-pub__byline">Konstantia Moirogiorgou, Freiderikos Raptopoulos, George Livanos, <u>Stavros Orfanoudakis</u>, Maria Papadogiorgaki, Michalis Zervakis, Michail Maniadakis. <em>IEEE International Conference on Imaging Systems and Techniques (IEEE IST)</em>, 2022.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1109/IST55454.2022.9827769" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="moirogiorgou2022robotic"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <div class="so-pubyear">2021</div>
+
+      <article class="so-pub" id="pub-powertac">
+        <h3 class="so-pub__title"><a href="https://doi.org/10.1007/978-3-030-82254-5_9" target="_blank" rel="noopener">"Aiming for Half Gets You to the Top: Winning PowerTAC 2020"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Stefanos Kontos, Charilaos Akasiadis, Georgios Chalkiadakis. <em>European Conference on Multi-Agent Systems (EUMAS)</em>, 2021.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1007/978-3-030-82254-5_9" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/PowerTacAgent" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2021powertac"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  </section>
+
+  <section id="projects" class="so-panel so-panel--projects" data-nav-section>
+
+
+  <div class="so-pagehead">
+    <div class="so-eyebrow">Open source &amp; collaborations</div>
+    <h1 class="so-h1">Projects</h1>
+    <p class="so-lead">A curated portfolio of open-source research software and collaborative initiatives in intelligent energy systems, reinforcement learning, and EV charging optimization.</p>
+    <div class="so-pagehead__actions">
+      <a class="so-btn so-btn--primary" href="https://github.com/StavrosOrf" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub profile</a>
+      <a class="so-btn so-btn--ghost" href="#publications">Related publications</a>
+    </div>
+  </div>
+
+  <div class="so-projects">
+
+    <article class="so-project" data-github-repo="StavrosOrf/EV2Gym">
+      <a class="so-project__thumb" href="https://github.com/StavrosOrf/EV2Gym" target="_blank" rel="noopener">
+        <img src="figures/ev2gym.png" alt="EV2Gym" />
+      </a>
+      <div class="so-project__info">
+        <div class="so-project__meta">
+          <span class="so-tag so-tag--year" data-github-stars>GitHub stars 201</span>
+          <span class="so-tag so-tag--year" data-github-forks>Forks 47</span>
+          <span class="so-tag so-tag--year">2024</span>
+        </div>
+        <h2 class="so-h3">EV2Gym</h2>
+        <p>Research-grade Python environment for large-scale EV smart charging and V2G simulation. Provides an OpenAI Gym interface for reproducible reinforcement-learning experiments in Vehicle-to-Grid settings.</p>
+        <div class="so-project__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/EV2Gym" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Repository</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1109/TITS.2024.3510945" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="so-project" data-github-repo="StavrosOrf/EV-GNN">
+      <a class="so-project__thumb" href="https://github.com/StavrosOrf/EV-GNN" target="_blank" rel="noopener">
+        <span class="so-project__placeholder">EV-GNN</span>
+      </a>
+      <div class="so-project__info">
+        <div class="so-project__meta">
+          <span class="so-tag so-tag--year" data-github-stars>GitHub stars 26</span>
+          <span class="so-tag so-tag--year" data-github-forks>Forks 13</span>
+          <span class="so-tag so-tag--year">2024</span>
+        </div>
+        <h2 class="so-h3">EV-GNN</h2>
+        <p>Python package for graph-based reinforcement learning in EV charging coordination. Built to support scalable experiments and reproduce the Nature Communications Engineering study.</p>
+        <div class="so-project__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/EV-GNN" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Repository</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1038/s44172-025-00457-8" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="so-project" data-github-repo="StavrosOrf/DT4EVs">
+      <a class="so-project__thumb" href="https://github.com/StavrosOrf/DT4EVs" target="_blank" rel="noopener">
+        <span class="so-project__placeholder">DT4EVs</span>
+      </a>
+      <div class="so-project__info">
+        <div class="so-project__meta">
+          <span class="so-tag so-tag--year" data-github-stars>GitHub stars 16</span>
+          <span class="so-tag so-tag--year" data-github-forks>Forks 4</span>
+          <span class="so-tag so-tag--year">2025</span>
+        </div>
+        <h2 class="so-h3">DT4EVs</h2>
+        <p>Python package for offline EV charging optimization using decision transformers, designed for data-driven scheduling and benchmark evaluation in dynamic charging environments.</p>
+        <div class="so-project__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/DT4EVs" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Repository</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://doi.org/10.1016/j.egyai.2026.100679" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="so-project" data-github-repo="StavrosOrf/PowerFlowNet">
+      <a class="so-project__thumb" href="https://github.com/StavrosOrf/PowerFlowNet" target="_blank" rel="noopener">
+        <span class="so-project__placeholder">PowerFlowNet</span>
+      </a>
+      <div class="so-project__info">
+        <div class="so-project__meta">
+          <span class="so-tag so-tag--year" data-github-stars>GitHub stars 71</span>
+          <span class="so-tag so-tag--year" data-github-forks>Forks 12</span>
+          <span class="so-tag so-tag--year">2023</span>
+        </div>
+        <h2 class="so-h3">PowerFlowNet</h2>
+        <p>Python package for graph-neural-network-based power-flow approximation, enabling fast surrogate modeling for grid analysis and optimization workflows.</p>
+        <div class="so-project__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/PowerFlowNet" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Repository</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="so-project">
+      <a class="so-project__thumb" href="https://drive2x.eu/" target="_blank" rel="noopener">
+        <img src="figures/drive2x.png" alt="DRIVE2X" />
+      </a>
+      <div class="so-project__info">
+        <div class="so-project__meta">
+          <span class="so-tag so-tag--year">EU Horizon</span>
+          <span class="so-tag so-tag--year">2023 – 2027</span>
+        </div>
+        <h2 class="so-h3">DRIVE2X</h2>
+        <p>EU Horizon consortium advancing vehicle electrification through bidirectional smart charging. My TU Delft PhD work contributed large-scale coordination methods for real-world deployment scenarios.</p>
+        <div class="so-project__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://drive2x.eu/" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Consortium site</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+
+  </section>
+
+  <section id="teaching" class="so-panel so-panel--teaching" data-nav-section>
+
+
+  <div class="so-pagehead">
+    <div class="so-eyebrow">Supervision &amp; teaching</div>
+    <h1 class="so-h1">Teaching</h1>
+    <p class="so-lead">Lectures, tutorials, and co-supervision of MSc theses across ETH Zürich, MIT, TU Delft, and the Technical University of Crete.</p>
+  </div>
+
+  <section class="so-section so-courses">
+    <div class="so-sectionhead">
+      <div class="so-eyebrow">Lectures &amp; tutorials</div>
+      <h2 class="so-h2">Courses Taught</h2>
+    </div>
+    <div class="so-students">
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Introduction to Deep Reinforcement Learning</div>
+          <div class="so-student__thesis"><em>Guest Lecturer · AI Minor Program</em></div>
+          <div class="so-student__note">Invited lecture covering policy/value methods, exploration strategies, and practical implementation guidance.</div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Tutorial on Reinforcement Learning</div>
+          <div class="so-student__thesis"><em>Guest Lecturer · InnoCyPES Colloquium</em></div>
+          <div class="so-student__note">Hands-on tutorial session focused on modeling sequential decision-making problems in energy systems.</div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Artificial Intelligence</div>
+          <div class="so-student__thesis"><em>Teaching Assistant · Tutorials &amp; Project Supervision</em></div>
+          <div class="so-student__note">Supported tutorials, graded coursework, and supervised student projects in core AI topics.</div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">Technical University of Crete</span>
+            <span class="so-meta">2021 – 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Multiagent Systems</div>
+          <div class="so-student__thesis"><em>Teaching Assistant · Tutorials &amp; Project Supervision</em></div>
+          <div class="so-student__note">Delivered tutorial support and project mentoring on coordination, planning, and learning in multiagent settings.</div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">Technical University of Crete</span>
+            <span class="so-meta">2021 – 2022</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="so-section so-theses">
+    <div class="so-sectionhead">
+      <div class="so-eyebrow">MSc thesis supervision</div>
+      <h2 class="so-h2">Students</h2>
+    </div>
+    <div class="so-students">
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Bibi van den Berg</div>
+          <div class="so-student__thesis"><em>Quantifying the Economic V2G Benefits: Cost-Optimal V2G Integration in Residential Settings</em></div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="#pub-v2g-flexibility"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Ruben Eland</div>
+          <div class="so-student__thesis"><em>Improving EV Aggregators' Workplace Charging: A Safe Reinforcement Learning Approach</em></div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="https://repository.tudelft.nl/record/uuid:22ec1d00-4fae-44d6-a154-734c20f62bc6" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Thesis</a>
+            <a class="so-btn so-btn--secondary so-btn--sm" href="#pub-safe-rl-v2g"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Yunus Emre Yılmaz</div>
+          <div class="so-student__thesis"><em>EV Charging Strategies through Power Setpoint Tracking: A Reinforcement Learning Approach</em></div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2024</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="https://repository.tudelft.nl/record/uuid:233a3c57-3a03-4498-ae8f-aa6d28098177" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Thesis</a>
+            <a class="so-btn so-btn--secondary so-btn--sm" href="#pub-power-setpoint"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="so-student">
+        <div class="so-student__l">
+          <div class="so-student__name">Antonios Mastorakis</div>
+          <div class="so-student__thesis"><em>Development of a Competitive Autonomous Agent for Smart-Grid Energy Markets</em></div>
+        </div>
+        <div class="so-student__r">
+          <div class="so-student__meta">
+            <span class="so-meta">Technical University of Crete</span>
+            <span class="so-meta">2022</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="https://dias.library.tuc.gr/view/94575?locale=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Thesis</a>
+            <a class="so-btn so-btn--secondary so-btn--sm" href="#pub-powertac"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  </section>
 </main>
 
 <dialog class="so-cite-dialog" id="cite-dialog">
@@ -249,17 +800,52 @@
 
 <script>
 const citeEntries = {
-  orfanoudakis2025evgnn: {
-    title: 'Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks',
-    bibtex: `@article{orfanoudakis2025evgnn,
-  title = {Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks},
-  author = {Orfanoudakis, Stavros and Robu, Valentin and Salazar Duque, Edgar Mauricio and Palensky, Peter and Vergara, Pedro P.},
-  journal = {Communications Engineering},
-  volume = {4},
-  number = {1},
-  pages = {118},
+  gao2026topologyaware: {
+    title: 'Topology-Aware Graph Reinforcement Learning for Energy Storage Systems Optimal Dispatch in Distribution Networks',
+    bibtex: `@misc{gao2026topologyaware,
+  title = {Topology-Aware Graph Reinforcement Learning for Energy Storage Systems Optimal Dispatch in Distribution Networks},
+  author = {Gao, Shuyi and Orfanoudakis, Stavros and Hou, Shengren and Palensky, Peter and Vergara, Pedro P.},
+  year = {2026},
+  eprint = {2603.26264},
+  archivePrefix = {arXiv}
+}`
+  },
+  gao2026flowmatching: {
+    title: 'Flow Matching Policy with Entropy Regularization',
+    bibtex: `@misc{gao2026flowmatching,
+  title = {Flow Matching Policy with Entropy Regularization},
+  author = {Gao, Ting and Orfanoudakis, Stavros and Lin, Nan and Isufi, Elvin and Daamen, Winnie and Hoogendoorn, Serge P.},
+  year = {2026},
+  eprint = {2603.17685},
+  archivePrefix = {arXiv}
+}`
+  },
+  orfanoudakis2026savgo: {
+    title: 'SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control',
+    bibtex: `@misc{orfanoudakis2026savgo,
+  title = {SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control},
+  author = {Orfanoudakis, Stavros and Vergara, Pedro P.},
+  year = {2026}
+}`
+  },
+  orfanoudakis2025pirl: {
+    title: 'Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints',
+    bibtex: `@misc{orfanoudakis2025pirl,
+  title = {Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints},
+  author = {Orfanoudakis, Stavros and Oliehoek, Frans A. and Palensky, Peter and Vergara, Pedro P.},
   year = {2025},
-  doi = {10.1038/s44172-025-00457-8}
+  eprint = {2510.12335},
+  archivePrefix = {arXiv}
+}`
+  },
+  orfanoudakis2025llmev: {
+    title: 'Optimizing Electric Vehicles Charging Using Large Language Models and Graph Neural Networks',
+    bibtex: `@misc{orfanoudakis2025llmev,
+  title = {Optimizing Electric Vehicles Charging Using Large Language Models and Graph Neural Networks},
+  author = {Orfanoudakis, Stavros and Palensky, Peter and Vergara, Pedro P.},
+  year = {2025},
+  eprint = {2502.03067},
+  archivePrefix = {arXiv}
 }`
   },
   orfanoudakis2026gnndt: {
@@ -274,14 +860,54 @@ const citeEntries = {
   doi = {10.1016/j.egyai.2026.100679}
 }`
   },
-  orfanoudakis2025pirl: {
-    title: 'Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints',
-    bibtex: `@misc{orfanoudakis2025pirl,
-  title = {Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints},
-  author = {Orfanoudakis, Stavros and Oliehoek, Frans A. and Palensky, Peter and Vergara, Pedro P.},
+  kaseb2026pinn4pf: {
+    title: 'Physics-Informed Neural Network with Adaptive Activation for Power Flow',
+    bibtex: `@article{kaseb2026pinn4pf,
+  title = {Physics-Informed Neural Network with Adaptive Activation for Power Flow},
+  author = {Kaseb, Zeynab and Orfanoudakis, Stavros and Vergara, Pedro P. and Palensky, Peter},
+  journal = {International Journal of Electrical Power \\& Energy Systems},
+  volume = {174},
+  pages = {111525},
+  year = {2026},
+  doi = {10.1016/j.ijepes.2025.111525}
+}`
+  },
+  diazlondono2026mpcv2g: {
+    title: 'Open Source Algorithms for Maximizing V2G Flexibility Based on Model Predictive Control',
+    bibtex: `@article{diazlondono2026mpcv2g,
+  title = {Open Source Algorithms for Maximizing {V2G} Flexibility Based on Model Predictive Control},
+  author = {Diaz-Londono, Cesar and Orfanoudakis, Stavros and Vergara Barrios, Pedro P. and Palensky, Peter and Ruiz, Fredy and Gruosso, Giambattista},
+  journal = {Electric Power Systems Research},
+  volume = {250},
+  pages = {112082},
+  year = {2026},
+  doi = {10.1016/j.epsr.2025.112082}
+}`
+  },
+  esser2025dataset: {
+    title: 'High-Temporal-Resolution Dataset of Uni-, Bidirectional, and Dynamic Electric Vehicle Charging Profiles',
+    bibtex: `@article{esser2025dataset,
+  title = {High-Temporal-Resolution Dataset of Uni-, Bidirectional, and Dynamic Electric Vehicle Charging Profiles},
+  author = {Esser, Marcel and Orfanoudakis, Stavros and Homaee, Omid and Vahidinasab, Vahid and Vergara, Pedro P. and Spina, Alfio},
+  journal = {Scientific Data},
+  volume = {12},
+  number = {1},
+  pages = {1192},
   year = {2025},
-  eprint = {2510.12335},
-  archivePrefix = {arXiv}
+  doi = {10.1038/s41597-025-05524-5}
+}`
+  },
+  orfanoudakis2025evgnn: {
+    title: 'Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks',
+    bibtex: `@article{orfanoudakis2025evgnn,
+  title = {Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks},
+  author = {Orfanoudakis, Stavros and Robu, Valentin and Salazar Duque, Edgar Mauricio and Palensky, Peter and Vergara, Pedro P.},
+  journal = {Communications Engineering},
+  volume = {4},
+  number = {1},
+  pages = {118},
+  year = {2025},
+  doi = {10.1038/s44172-025-00457-8}
 }`
   },
   orfanoudakis2025ev2gym: {
@@ -295,6 +921,138 @@ const citeEntries = {
   pages = {2410--2421},
   year = {2025},
   doi = {10.1109/TITS.2024.3510945}
+}`
+  },
+  kallinteris2024comprehensive: {
+    title: 'A Comprehensive Analysis of Agent Factorization and Learning Algorithms in Multiagent Systems',
+    bibtex: `@article{kallinteris2024comprehensive,
+  title = {A Comprehensive Analysis of Agent Factorization and Learning Algorithms in Multiagent Systems},
+  author = {Kallinteris, Andreas and Orfanoudakis, Stavros and Chalkiadakis, Georgios},
+  journal = {Autonomous Agents and Multi-Agent Systems},
+  volume = {38},
+  number = {2},
+  pages = {27},
+  year = {2024},
+  doi = {10.1007/s10458-024-09662-9}
+}`
+  },
+  lin2024powerflownet: {
+    title: 'PowerFlowNet: Power Flow Approximation Using Message Passing Graph Neural Networks',
+    bibtex: `@article{lin2024powerflownet,
+  title = {{PowerFlowNet}: Power Flow Approximation Using Message Passing Graph Neural Networks},
+  author = {Lin, Nan and Orfanoudakis, Stavros and Ordonez Cardenas, Nathan and Giraldo, Juan S. and Vergara, Pedro P.},
+  journal = {International Journal of Electrical Power \\& Energy Systems},
+  volume = {160},
+  pages = {110112},
+  year = {2024},
+  doi = {10.1016/j.ijepes.2024.110112}
+}`
+  },
+  vogiatzis2023metalearning: {
+    title: 'Novel Meta-Learning Techniques for the Multiclass Image Classification Problem',
+    bibtex: `@article{vogiatzis2023metalearning,
+  title = {Novel Meta-Learning Techniques for the Multiclass Image Classification Problem},
+  author = {Vogiatzis, Antonios and Orfanoudakis, Stavros and Chalkiadakis, Georgios and Moirogiorgou, Konstantia and Zervakis, Michalis},
+  journal = {Sensors},
+  volume = {23},
+  number = {1},
+  pages = {9},
+  year = {2023},
+  doi = {10.3390/s23010009}
+}`
+  },
+  orfanoudakis2026dispatch: {
+    title: 'Can AI Accelerate EV Dispatch?',
+    bibtex: `@misc{orfanoudakis2026dispatch,
+  title = {Can AI Accelerate EV Dispatch?},
+  author = {Orfanoudakis, Stavros and Elders, B. and Palensky, Peter and Vergara, Pedro P.},
+  year = {2026},
+  note = {Workshop paper, ECML PKDD Workshop on Machine Learning for Power Systems}
+}`
+  },
+  eland2026saferl: {
+    title: 'Safe Reinforcement Learning for V2G-Enabled Electric Vehicle Aggregators',
+    bibtex: `@misc{eland2026saferl,
+  title = {Safe Reinforcement Learning for {V2G}-Enabled Electric Vehicle Aggregators},
+  author = {Eland, Ruben and Orfanoudakis, Stavros and Vergara, Pedro P.},
+  year = {2026},
+  note = {Workshop paper, ECML PKDD Workshop on Machine Learning for Power Systems}
+}`
+  },
+  ravanbach2024v2gtool: {
+    title: 'A Dynamic Prediction Tool for Vehicle-to-Grid Operation and Planning',
+    bibtex: `@inproceedings{ravanbach2024v2gtool,
+  title = {A Dynamic Prediction Tool for Vehicle-to-Grid Operation and Planning},
+  author = {Ravanbach, Babak and Turhan, Elif and Wulff, Niklas and Orfanoudakis, Stavros and Vergara, Pedro P. and Vahidinasab, Vahid and Dias, Luiz and Mendes, Goncalo},
+  booktitle = {Proceedings of the 2024 IEEE 22nd Mediterranean Electrotechnical Conference (MELECON)},
+  pages = {610--615},
+  year = {2024},
+  doi = {10.1109/MELECON56669.2024.10608538}
+}`
+  },
+  martinez2024essplanning: {
+    title: 'Energy Storage Systems Planning in the Electric Distribution System Considering the Grow of PV Penetration',
+    bibtex: `@inproceedings{martinez2024essplanning,
+  title = {Energy Storage Systems Planning in the Electric Distribution System Considering the Grow of PV Penetration},
+  author = {Martinez, Norberto A. and Orfanoudakis, Stavros and Vergara, Pedro P. and Franco, John F.},
+  booktitle = {Proceedings of the 24th EEEIC International Conference on Environment and Electrical Engineering and 8th I\\&CPS Europe},
+  year = {2024},
+  doi = {10.1109/EEEIC/ICPSEurope61470.2024.10751415}
+}`
+  },
+  yilmaz2024powersetpoint: {
+    title: 'Reinforcement Learning for Optimized EV Charging Through Power Setpoint Tracking',
+    bibtex: `@inproceedings{yilmaz2024powersetpoint,
+  title = {Reinforcement Learning for Optimized EV Charging Through Power Setpoint Tracking},
+  author = {Yilmaz, Yunus Emre and Orfanoudakis, Stavros and Vergara, Pedro P.},
+  booktitle = {IEEE PES Innovative Smart Grid Technologies Europe (ISGT Europe 2024)},
+  year = {2024},
+  doi = {10.1109/ISGTEUROPE62998.2024.10863457}
+}`
+  },
+  orfanoudakis2023aggregation: {
+    title: 'A Novel Aggregation Framework for the Efficient Integration of Distributed Energy Resources in the Smart Grid',
+    bibtex: `@inproceedings{orfanoudakis2023aggregation,
+  title = {A Novel Aggregation Framework for the Efficient Integration of Distributed Energy Resources in the Smart Grid},
+  author = {Orfanoudakis, Stavros and Chalkiadakis, Georgios},
+  booktitle = {Proceedings of the International Joint Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
+  pages = {2514--2516},
+  year = {2023},
+  url = {https://research.tudelft.nl/en/publications/a-novel-aggregation-framework-for-the-efficient-integration-of-di/}
+}`
+  },
+  kallinteris2022factorization: {
+    title: 'The Performance Impact of Combining Agent Factorization with Different Learning Algorithms for Multiagent Coordination',
+    bibtex: `@inproceedings{kallinteris2022factorization,
+  title = {The Performance Impact of Combining Agent Factorization with Different Learning Algorithms for Multiagent Coordination},
+  author = {Kallinteris, Andreas and Orfanoudakis, Stavros and Chalkiadakis, Georgios},
+  booktitle = {Proceedings of the 12th Hellenic Conference on Artificial Intelligence (SETN 2022)},
+  year = {2022},
+  doi = {10.1145/3549737.3549773}
+}`
+  },
+  moirogiorgou2022robotic: {
+    title: 'Intelligent Robotic System for Urban Waste Recycling',
+    bibtex: `@inproceedings{moirogiorgou2022robotic,
+  title = {Intelligent Robotic System for Urban Waste Recycling},
+  author = {Moirogiorgou, Konstantia and Raptopoulos, Freiderikos and Livanos, George and Orfanoudakis, Stavros and Papadogiorgaki, Maria and Zervakis, Michalis and Maniadakis, Michail},
+  booktitle = {Proceedings of the 2022 IEEE International Conference on Imaging Systems and Techniques (IST)},
+  year = {2022},
+  doi = {10.1109/IST55454.2022.9827769}
+}`
+  },
+  orfanoudakis2021powertac: {
+    title: 'Aiming for Half Gets You to the Top: Winning PowerTAC 2020',
+    bibtex: `@inproceedings{orfanoudakis2021powertac,
+  title = {Aiming for Half Gets You to the Top: Winning PowerTAC 2020},
+  author = {Orfanoudakis, Stavros and Kontos, Stefanos and Akasiadis, Charilaos and Chalkiadakis, Georgios},
+  editor = {Rosenfeld, Ariel and Talmon, Nimrod},
+  booktitle = {Multi-Agent Systems -- 18th European Conference, EUMAS 2021, Revised Selected Papers},
+  series = {Lecture Notes in Computer Science},
+  volume = {12802},
+  pages = {144--159},
+  year = {2021},
+  doi = {10.1007/978-3-030-82254-5_9}
 }`
   }
 };
@@ -349,3 +1107,4 @@ citeDialog.addEventListener('click', (event) => {
 
 </body>
 </html>
+

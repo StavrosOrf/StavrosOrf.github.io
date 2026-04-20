@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root {
+  --nav-h:        72px;
+  --foot-h:       80px;
   --paper:        #f4f1e8;
   --paper-2:      #eae5d6;
   --paper-3:      #ded7c3;
@@ -101,6 +103,8 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+html { scroll-behavior: smooth; }
+
 a {
   color: var(--delft-blue);
   text-decoration: underline;
@@ -114,7 +118,12 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 
 ::selection { background: var(--grid-green-3); color: var(--ink-2); }
 
-.so-root { min-height: 100vh; padding-top: 72px; padding-bottom: 80px; }
+.so-root {
+  min-height: 100vh;
+  padding-top: var(--nav-h);
+  padding-bottom: var(--foot-h);
+  scroll-snap-type: y proximity;
+}
 
 /* ---------- Top nav ---------- */
 .so-nav {
@@ -152,8 +161,8 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   font-size: 10px; color: var(--ink-3);
   letter-spacing: 0.1em; text-transform: uppercase;
 }
-.so-nav__actions { display: flex; align-items: center; gap: 12px; }
-.so-nav__tabs { display: flex; gap: 4px; }
+.so-nav__actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.so-nav__tabs { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
 .so-nav__tab {
   background: transparent; border: 0;
   padding: 8px 14px;
@@ -197,15 +206,124 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 
 /* ---------- Page / layout ---------- */
 .so-page {
-  max-width: var(--container); margin: 0 auto;
-  padding: 56px 28px 40px;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   animation: so-fade 0.35s var(--ease-out);
 }
 @keyframes so-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
+.so-panel {
+  position: relative;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  min-height: calc(100vh - var(--nav-h) - var(--foot-h));
+  padding: 34px 28px 36px;
+  border: 1px solid color-mix(in oklch, var(--rule) 86%, transparent);
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  scroll-margin-top: 92px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  box-shadow: var(--sh-sm);
+  overflow: clip;
+  opacity: 0.76;
+  transform: translateY(12px);
+  transition: opacity 420ms var(--ease-out),
+              transform 420ms var(--ease-out),
+              box-shadow var(--dur-normal) var(--ease-standard);
+}
+.so-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
+.so-panel > * {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.so-panel.is-visible,
+.so-panel--active {
+  opacity: 1;
+  transform: none;
+}
+
+.so-panel--home {
+  background:
+    radial-gradient(1200px 360px at -12% 8%, color-mix(in oklch, var(--grid-green) 13%, transparent) 0%, transparent 54%),
+    linear-gradient(180deg, color-mix(in oklch, var(--paper) 92%, white) 0%, var(--paper-2) 100%);
+}
+.so-panel--home::before {
+  background:
+    linear-gradient(115deg, color-mix(in oklch, var(--delft-blue) 8%, transparent) 0%, transparent 34%),
+    radial-gradient(700px 180px at 92% -8%, color-mix(in oklch, var(--grid-green) 9%, transparent) 0%, transparent 70%);
+}
+
+.so-panel--publications {
+  background:
+    radial-gradient(1000px 320px at -8% -12%, color-mix(in oklch, var(--delft-blue) 12%, transparent) 0%, transparent 66%),
+    radial-gradient(760px 240px at 108% 12%, color-mix(in oklch, var(--signal-amber) 9%, transparent) 0%, transparent 70%),
+    linear-gradient(180deg, color-mix(in oklch, var(--paper) 92%, white) 0%, color-mix(in oklch, var(--paper-2) 88%, white) 100%);
+}
+
+.so-panel--highlights {
+  background:
+    radial-gradient(900px 250px at 98% 8%, color-mix(in oklch, var(--signal-amber) 10%, transparent) 0%, transparent 65%),
+    linear-gradient(180deg, color-mix(in oklch, var(--paper-2) 84%, white) 0%, color-mix(in oklch, var(--paper-3) 86%, var(--paper)) 100%);
+}
+.so-panel--highlights::before {
+  background:
+    linear-gradient(110deg, color-mix(in oklch, var(--signal-rust) 7%, transparent) 0%, transparent 40%),
+    radial-gradient(560px 180px at -8% 102%, color-mix(in oklch, var(--grid-green) 8%, transparent) 0%, transparent 70%);
+}
+.so-panel--publications::before {
+  background:
+    linear-gradient(165deg, color-mix(in oklch, var(--delft-blue) 8%, transparent) 0%, transparent 38%),
+    radial-gradient(680px 230px at 78% 102%, color-mix(in oklch, var(--grid-green) 8%, transparent) 0%, transparent 72%);
+}
+
+.so-panel--projects {
+  background:
+    linear-gradient(140deg, color-mix(in oklch, var(--signal-amber) 12%, var(--paper)) 0%, color-mix(in oklch, var(--paper-2) 86%, white) 48%, color-mix(in oklch, var(--signal-rust) 10%, var(--paper)) 100%);
+}
+.so-panel--projects::before {
+  background:
+    linear-gradient(160deg, transparent 0%, color-mix(in oklch, var(--signal-rust) 7%, transparent) 34%, transparent 66%),
+    radial-gradient(560px 220px at 8% -10%, color-mix(in oklch, var(--signal-amber) 11%, transparent) 0%, transparent 70%);
+}
+
+.so-panel--teaching {
+  background:
+    radial-gradient(circle at 1px 1px, color-mix(in oklch, var(--rule) 24%, transparent) 1px, transparent 1.3px),
+    linear-gradient(180deg, color-mix(in oklch, var(--paper) 90%, white) 0%, color-mix(in oklch, var(--grid-green-3) 32%, var(--paper-2)) 100%);
+  background-size: 14px 14px, auto;
+}
+.so-panel--teaching::before {
+  background: linear-gradient(110deg, color-mix(in oklch, var(--grid-green) 8%, transparent) 0%, transparent 45%);
+}
+
+.so-panel--cv {
+  background:
+    linear-gradient(180deg, color-mix(in oklch, var(--paper-2) 82%, white) 0%, color-mix(in oklch, var(--paper-3) 82%, var(--paper)) 100%);
+}
+.so-panel--cv::before {
+  background: linear-gradient(90deg, color-mix(in oklch, var(--delft-blue) 6%, transparent) 0%, transparent 26%, color-mix(in oklch, var(--grid-green) 4%, transparent) 100%);
+}
+
 .so-pagehead { margin-bottom: 48px; max-width: 780px; }
 .so-pagehead .so-eyebrow { margin-bottom: 10px; }
 .so-pagehead__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.so-panel .so-pagehead { margin-top: 0; }
 
 .so-rule { border: 0; border-top: 1px solid var(--rule); margin: 64px 0; }
 .so-section { margin: 48px 0; }
@@ -310,15 +428,15 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   font-family: var(--font-accent);
   font-style: italic;
   font-size: 20px;
-  color: var(--ink-3);
+  color: var(--ink-2);
   margin: -4px 0 22px;
 }
 .so-intro__text p {
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.68;
   color: var(--ink);
   margin: 0 0 14px;
-  max-width: 640px;
+  max-width: 660px;
   text-wrap: pretty;
 }
 .so-intro__text p em { font-family: var(--font-accent); font-style: italic; }
@@ -384,7 +502,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-intro__quote blockquote {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.35;
   letter-spacing: -0.015em;
   color: var(--ink-2);
@@ -416,6 +534,65 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-home .so-tl-body { width: 100%; max-width: none; }
 .so-tl-body em { font-family: var(--font-accent); font-style: italic; color: var(--ink-2); }
 .so-tl-body a { color: var(--delft-blue); }
+
+/* ---------- Highlights panel alignment ---------- */
+.so-panel--highlights .so-section {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.so-panel--highlights .so-sectionhead {
+  text-align: center;
+}
+.so-panel--highlights .so-sectionhead--split {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.so-panel--highlights .so-timeline {
+  padding-left: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.so-panel--highlights .so-timeline::before,
+.so-panel--highlights .so-tl-item::before {
+  display: none;
+}
+.so-panel--highlights .so-tl-item {
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in oklch, var(--rule) 74%, transparent);
+  background: color-mix(in oklch, var(--paper) 82%, white);
+  border-radius: var(--r-md);
+  box-shadow: var(--sh-sm);
+  text-align: center;
+}
+.so-panel--highlights .so-tl-year,
+.so-panel--highlights .so-tl-body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.so-panel--highlights .so-pub {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "tags"
+    "title"
+    "byline"
+    "links";
+  justify-items: center;
+  text-align: center;
+}
+.so-panel--highlights .so-pub__tags,
+.so-panel--highlights .so-pub__links {
+  justify-content: center;
+}
+.so-panel--highlights .so-pub__title,
+.so-panel--highlights .so-pub__byline {
+  max-width: 860px;
+}
 
 /* ---------- Publication list ---------- */
 .so-publist { display: flex; flex-direction: column; }
@@ -745,12 +922,14 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   border-width: 1px;
   box-shadow: none;
 }
-.so-theses .so-student__actions a.so-btn[href*="publications.html"] {
+.so-theses .so-student__actions a.so-btn[href*="publications.html"],
+.so-theses .so-student__actions a.so-btn[href^="#pub-"] {
   background: color-mix(in oklch, var(--delft-blue) 14%, var(--paper));
   color: color-mix(in oklch, var(--delft-blue) 80%, var(--ink));
   border-color: color-mix(in oklch, var(--delft-blue) 30%, var(--rule));
 }
-.so-theses .so-student__actions a.so-btn[href*="publications.html"]:hover {
+.so-theses .so-student__actions a.so-btn[href*="publications.html"]:hover,
+.so-theses .so-student__actions a.so-btn[href^="#pub-"]:hover {
   background: color-mix(in oklch, var(--delft-blue) 22%, var(--paper));
 }
 .so-theses .so-student__actions a.so-btn[href*="repository.tudelft.nl"],
@@ -848,13 +1027,21 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 @media (max-width: 880px) {
   .so-nav__inner { padding: 12px 20px; gap: 12px; flex-wrap: wrap; }
   .so-nav__sub { display: none; }
-  .so-nav__actions { width: 100%; justify-content: space-between; flex-wrap: wrap; }
+  .so-nav__actions { width: 100%; justify-content: flex-start; }
   .so-nav__tabs { flex-wrap: wrap; gap: 2px; }
   .so-nav__tab { padding: 6px 10px; font-size: 13px; }
   .so-theme-toggle { min-width: 0; }
   .so-foot__inner { padding: 12px 20px; flex-wrap: wrap; gap: 10px; }
   .so-foot__upd { display: none; }
-  .so-page { padding: 36px 20px 32px; }
+  .so-page { padding: 0; }
+  .so-page { gap: 0; }
+  .so-panel {
+    min-height: calc(100vh - var(--nav-h) - var(--foot-h));
+    padding: 24px 18px 26px;
+    border-radius: 0;
+    scroll-margin-top: 84px;
+  }
+  .so-panel--teaching { background-size: 11px 11px, auto; }
   .so-intro {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -892,4 +1079,9 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   .so-publications .so-pubyear::after { display: none; }
   .so-publications .so-pub { grid-template-areas: "title" "byline" "links"; }
   .so-sectionhead--split { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .so-panel { transition: none; opacity: 1; transform: none; }
 }
