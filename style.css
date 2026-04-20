@@ -706,6 +706,64 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-student__r { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; flex-shrink: 0; }
 .so-student__meta { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
 
+/* ---------- Courses section ---------- */
+.so-courses .so-students { gap: 14px; }
+.so-courses .so-student {
+  padding: 18px 20px;
+  border: 1px solid var(--rule);
+  border-left: 4px solid color-mix(in oklch, var(--grid-green) 52%, var(--rule));
+  border-radius: var(--r-md);
+  background: linear-gradient(180deg, color-mix(in oklch, var(--paper-2) 92%, white), var(--paper-2));
+  box-shadow: var(--sh-sm);
+  transition: box-shadow var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard);
+}
+.so-courses .so-student:hover {
+  box-shadow: var(--sh-md);
+  border-color: color-mix(in oklch, var(--grid-green) 24%, var(--rule));
+}
+.so-courses .so-student:last-child { border-color: var(--rule); }
+.so-courses .so-student__name { margin-bottom: 4px; }
+.so-courses .so-student__thesis { margin-bottom: 6px; }
+.so-courses .so-student__note {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-3);
+  max-width: 760px;
+}
+
+/* ---------- MSc theses section ---------- */
+.so-theses .so-student__thesis {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 760px;
+}
+.so-theses .so-student__thesis em {
+  color: var(--ink-2);
+}
+.so-theses .so-student__actions .so-btn {
+  border-width: 1px;
+  box-shadow: none;
+}
+.so-theses .so-student__actions a.so-btn[href*="publications.html"] {
+  background: color-mix(in oklch, var(--delft-blue) 14%, var(--paper));
+  color: color-mix(in oklch, var(--delft-blue) 80%, var(--ink));
+  border-color: color-mix(in oklch, var(--delft-blue) 30%, var(--rule));
+}
+.so-theses .so-student__actions a.so-btn[href*="publications.html"]:hover {
+  background: color-mix(in oklch, var(--delft-blue) 22%, var(--paper));
+}
+.so-theses .so-student__actions a.so-btn[href*="repository.tudelft.nl"],
+.so-theses .so-student__actions a.so-btn[href*="dias.library.tuc.gr"] {
+  background: color-mix(in oklch, var(--signal-rust) 14%, var(--paper));
+  color: color-mix(in oklch, var(--signal-rust) 82%, var(--ink));
+  border-color: color-mix(in oklch, var(--signal-rust) 30%, var(--rule));
+}
+.so-theses .so-student__actions a.so-btn[href*="repository.tudelft.nl"]:hover,
+.so-theses .so-student__actions a.so-btn[href*="dias.library.tuc.gr"]:hover {
+  background: color-mix(in oklch, var(--signal-rust) 22%, var(--paper));
+}
+
 /* ---------- Citations page ---------- */
 .so-citelist { display: flex; flex-direction: column; gap: 22px; }
 .so-citeitem {
