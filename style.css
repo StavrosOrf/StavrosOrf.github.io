@@ -260,12 +260,16 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-intro {
   display: grid;
   grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "portrait text"
+    "interests edu"
+    "quote quote";
   gap: 56px;
   align-items: flex-start;
   padding: 24px 0 32px;
 }
-.so-intro__side { display: flex; flex-direction: column; gap: 28px; align-items: flex-start; }
 .so-intro__portrait {
+  grid-area: portrait;
   width: 248px;
   height: 312px;
   border-radius: 28px;
@@ -289,6 +293,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   list-style: none; padding: 0; margin: 12px 0 0;
   display: flex; flex-direction: column; gap: 6px;
 }
+.so-intro__interests { grid-area: interests; }
 .so-intro__interests li {
   font-size: 14.5px;
   color: var(--ink);
@@ -300,7 +305,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   content: ''; position: absolute; left: 0; top: 10px;
   width: 6px; height: 1px; background: var(--grid-green);
 }
-.so-intro__text { padding-top: 8px; }
+.so-intro__text { grid-area: text; padding-top: 8px; }
 .so-intro__role {
   font-family: var(--font-accent);
   font-style: italic;
@@ -318,11 +323,11 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 }
 .so-intro__text p em { font-family: var(--font-accent); font-style: italic; }
 .so-intro__edu {
+  grid-area: edu;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   max-width: 760px;
-  margin-top: 18px;
 }
 .so-intro__edu-item {
   display: flex;
@@ -365,6 +370,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 }
 .so-intro__quote {
   grid-column: 1 / -1;
+  grid-area: quote;
   margin: 10px 0 0;
   width: 100%;
   max-width: none;
@@ -457,6 +463,126 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-pub__links a:not(.so-btn):hover { color: var(--delft-blue-2); }
 .so-pub__links .so-btn { white-space: nowrap; }
 .so-arxiv { height: 14px; vertical-align: middle; }
+
+.so-publications .so-publist {
+  --pub-rail-offset: 96px;
+  --pub-rail-x: 64px;
+  --pub-year-gap: 18px;
+  position: relative;
+  padding-left: var(--pub-rail-offset);
+}
+.so-publications .so-publist::before {
+  content: '';
+  position: absolute;
+  left: var(--pub-rail-x);
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--rule);
+}
+.so-publications .so-pubyear {
+  position: relative;
+  width: var(--pub-rail-offset);
+  min-height: 0;
+  line-height: 1;
+  margin: 0 0 -4px calc(-1 * var(--pub-rail-offset));
+  padding-right: calc(var(--pub-rail-offset) - var(--pub-rail-x) + var(--pub-year-gap));
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--ink-3);
+  text-align: right;
+  text-transform: uppercase;
+}
+.so-publications .so-pubyear::after {
+  content: '';
+  position: absolute;
+  left: var(--pub-rail-x);
+  top: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translate(-50%, 1px);
+  background: var(--grid-green);
+  box-shadow: 0 0 0 3px var(--paper);
+}
+.so-publications .so-pub {
+  padding: 13px 0 14px;
+  grid-template-areas: "tags links" "title links" "byline links";
+  row-gap: 4px;
+  column-gap: 18px;
+}
+.so-publications .so-pub__tags {
+  margin-bottom: 0;
+  align-self: center;
+}
+.so-publications .so-pub__tags .so-tag {
+  padding: 2px 8px;
+  font-size: 10px;
+}
+.so-publications .so-pub__title {
+  font-size: 17px;
+  max-width: none;
+}
+.so-publications .so-pub__byline {
+  font-size: 13.5px;
+  line-height: 1.5;
+  max-width: none;
+}
+.so-publications .so-pub__links {
+  padding-top: 0;
+}
+.so-publications .so-pub__links .so-btn {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-width: 1px;
+  box-shadow: none;
+}
+.so-publications .so-pub__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]) {
+  background: color-mix(in oklch, var(--delft-blue) 14%, var(--paper));
+  color: color-mix(in oklch, var(--delft-blue) 76%, var(--ink));
+  border-color: color-mix(in oklch, var(--delft-blue) 28%, var(--rule));
+}
+.so-publications .so-pub__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]):hover {
+  background: color-mix(in oklch, var(--delft-blue) 22%, var(--paper));
+  color: color-mix(in oklch, var(--delft-blue) 86%, var(--ink));
+}
+.so-publications .so-pub__links a.so-btn[href*="arxiv.org"] {
+  background: color-mix(in oklch, var(--signal-amber) 18%, var(--paper));
+  color: color-mix(in oklch, var(--signal-amber) 82%, var(--ink));
+  border-color: color-mix(in oklch, var(--signal-amber) 34%, var(--rule));
+}
+.so-publications .so-pub__links a.so-btn[href*="arxiv.org"]:hover {
+  background: color-mix(in oklch, var(--signal-amber) 26%, var(--paper));
+}
+.so-publications .so-pub__links a.so-btn[href*="github.com"] {
+  background: color-mix(in oklch, var(--grid-green) 16%, var(--paper));
+  color: color-mix(in oklch, var(--grid-green) 82%, var(--ink));
+  border-color: color-mix(in oklch, var(--grid-green) 32%, var(--rule));
+}
+.so-publications .so-pub__links a.so-btn[href*="github.com"]:hover {
+  background: color-mix(in oklch, var(--grid-green) 24%, var(--paper));
+}
+.so-publications .so-pub__links a.so-btn[href$=".pdf"],
+.so-publications .so-pub__links a.so-btn[href*="/files/"],
+.so-publications .so-pub__links a.so-btn[href*="repository.tudelft.nl"] {
+  background: color-mix(in oklch, var(--signal-rust) 14%, var(--paper));
+  color: color-mix(in oklch, var(--signal-rust) 84%, var(--ink));
+  border-color: color-mix(in oklch, var(--signal-rust) 30%, var(--rule));
+}
+.so-publications .so-pub__links a.so-btn[href$=".pdf"]:hover,
+.so-publications .so-pub__links a.so-btn[href*="/files/"]:hover,
+.so-publications .so-pub__links a.so-btn[href*="repository.tudelft.nl"]:hover {
+  background: color-mix(in oklch, var(--signal-rust) 22%, var(--paper));
+}
+.so-publications .so-pub__links .so-cite-trigger {
+  background: color-mix(in oklch, #8b4ab8 16%, var(--paper));
+  color: color-mix(in oklch, #8b4ab8 78%, var(--ink));
+  border-color: color-mix(in oklch, #8b4ab8 32%, var(--rule));
+}
+.so-publications .so-pub__links .so-cite-trigger:hover {
+  background: color-mix(in oklch, #8b4ab8 24%, var(--paper));
+}
 
 /* ---------- Tags ---------- */
 .so-tag {
@@ -659,7 +785,16 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   .so-foot__inner { padding: 12px 20px; flex-wrap: wrap; gap: 10px; }
   .so-foot__upd { display: none; }
   .so-page { padding: 36px 20px 32px; }
-  .so-intro { grid-template-columns: 1fr; gap: 32px; }
+  .so-intro {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "portrait"
+      "text"
+      "edu"
+      "interests"
+      "quote";
+    gap: 32px;
+  }
   .so-home .so-rule { margin: 28px 0 22px; }
   .so-intro__portrait { width: 220px; height: 280px; padding: 8px; }
   .so-intro__edu { grid-template-columns: 1fr; max-width: 640px; }
@@ -675,5 +810,16 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   .so-student__actions { justify-content: flex-start; }
   .so-pub { grid-template-columns: 1fr; grid-template-areas: "tags" "title" "byline" "links"; }
   .so-pub__links { padding-top: 0; }
+  .so-publications .so-publist { padding-left: 0; }
+  .so-publications .so-publist::before { display: none; }
+  .so-publications .so-pubyear {
+    width: auto;
+    margin: 8px 0 2px;
+    min-height: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+  .so-publications .so-pubyear::after { display: none; }
+  .so-publications .so-pub { grid-template-areas: "title" "byline" "links"; }
   .so-sectionhead--split { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
