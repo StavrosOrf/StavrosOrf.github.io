@@ -1,0 +1,223 @@
+Curriculum Vitae
+Stavros Orfanoudakis
+Ħ +31 (0)617166218 | ć sorfanoudaki@ethz.ch | ^ StavrosOrf | ] stavros-orfanoudakis
+ Google Scholar | Ȉ 0000-0002-0767-9488 |  Research Gate |  DBLP
+Education
+04/2023–03/2026
+(Defense 9/2026)
+Ph.D. in Electrical Engineering, Mathematics, & Computer Science
+Delft University of Technology, The Netherlands
+Thesis Title: “Scalable Reinforcement Learning for Optimal Electric Vehicle Charging”
+Advisors: Dr. Pedro P. Vergara, Prof. Peter Palensky
+03/2021–12/2022 M.Sc. in Electrical and Computer Engineering (GPA: 8.67/10, Top 5%)
+Technical University of Crete, Greece
+Thesis Title: “A Novel Smart Grid Flexibility Aggregation Framework”
+Advisor: Prof. Georgios Chalkiadakis
+09/2015–02/2021 B.Sc. & M.Eng. in Electrical and Computer Engineering (GPA: 8.08/10, Top 10%)
+Technical University of Crete, Greece
+Thesis Title: “Developing an Autonomous Agent for Automated Electricity Trading”
+Advisor: Prof. Georgios Chalkiadakis
+Research & Work Experience
+02/2026–Present Research Scholar, ETH Zürich, Switzerland
+Power Systems Laboratory, Department of Information Technology and Electrical Engineering
+• Applied LLMs and physics‑informed ML to power system operation.
+11/2025–12/2025 Visiting Researcher, MIT, USA
+Center for Transportation and Logistics
+• Developed an AI‑based routing algorithm for electric truck fleets.
+• Co‑organized an industry event on Agentic AI in supply chains.
+04/2023–03/2026 Ph.D. Researcher, Delft University of Technology, The Netherlands
+Electrical Engineering, Mathematics, & Computer Science
+• Researched scalable reinforcement learning for energy systems.
+• Developed policy optimization and model‑based control methods.
+• Studied GNNs, transformers, LLMs, and diffusion models for EV coordination.
+• Designed physics‑informed learning for EV charging and grid optimization.
+• Contributed to open‑source tools and datasets, including EV2Gym.
+07/2021–09/2022 Graduate Research Associate, Technical University of Crete, Greece
+Department of Electrical Engineering & Computer Science
+• Contributed to the EU‑funded ANASA and i‑FISH projects.
+• Built RGB‑D and NIR waste detection systems with deep vision models.
+• Developed underwater vision models for fish detection and welfare analysis.
+• Studied multi‑agent reinforcement learning for smart grids.
+• Designed an autonomous electricity broker for PowerTAC.
+Teaching Experience
+Lectures & Tutorials
+2025 Guest Lecturer, AI Minor Program, “Introduction to Deep Reinforcement Learning”, TU Delft
+2025 Guest Lecturer, InnoCyPES Colloquium Seminar “Tutorial on Reinforcement Learning”, TU Delft
+2021 & 2022 Tutorials, Teaching Assistant & Project Supervisor, “Artificial Intelligence”, Technical University of Crete
+2021 & 2022 Tutorials, Teaching Assistant & Project Supervisor, “Multiagent Systems”, Technical University of Crete
+APRiL 20, 2026 STAVROS ORFANOUDAKiS · CV 1/5
+
+-- 1 of 5 --
+
+Master Thesis Supervision
+In progress Elif Basokur, “Short term Power Imbalance Forecasting: Accuracy vs Interpretability”, ETH Zurich
+In progress Eduardo Cuya, “Global Vessel Routing Using Reinforcement Learning and Graph Neural Networks”, Mas‑
+sachusetts Institute of Technology
+2025 Bibi van den Berg , “Quantifying the Economic V2G Benefits Evaluating Cost‑Optimal V2G Integration in
+Residential Settings Through Scenario‑Driven Modeling”, Delft University of Technology
+2025 Ruben Enland , “Improving EV Aggregators’ Workplace Charging: A Safe Reinforcement Learning Ap‑
+proach”, Delft University of Technology
+2024 Yunus Emre Yılmaz , “EV Charging Strategies through Power Setpoint Tracking: A Reinforcement Learning
+Approach”, Delft University of Technology
+2022 Antonios Mastorakis , “Development of a Competitive Autonomous Agent for Smart Grid Energy Markets”,
+Technical University of Crete
+Awards & Honors
+2026 TU Delft’s 2025: Best PowerWeb Paper Award and Best Energy Paper Nominee (500 €), for the pub‑
+lication “Scalable Reinforcement Learning for Large‑Scale Coordination of Electric Vehicles Using
+Graph Neural Networks”, Delft University of Technology, The Netherlands
+2025 Editor’s Choice 2025, “Scalable Reinforcement Learning for Large‑Scale Coordination of Electric Ve‑
+hicles Using Graph Neural Networks”, Nature Communications Engineering
+2022 Distinction in International Competitions (500 €), Greek State Scholarships Foundation, Greece
+2021 2nd Place, PowerTAC Power Trading Agent Competition, Cologne, Germany
+2020 1st Place, PowerTAC Power Trading Agent Competition, Cologne, Germany
+Grant Writing & Funding
+2026 MIT Climate Project Action (Post‑doc Grant) (MIT, USA) Under Review
+Title: “Multi‑Objective RL for Community‑Centric Data Center Operation and Planning”
+My role: Led the proposal writing and methodological design, and finalized the submission in col‑
+laboration with an MIT postdoctoral associate.
+2026 EU Horizon Consortium Grant (Delft, Netherlands) Under Review
+Title: “A Pan‑European Generative AI‑based Digital Spine for a Software‑defined Interoperable Smart
+Energy System”
+My role: Co‑authored the TU Delft‑associated work package and pilot description.
+2025 NCCR Automation Fellowship (ETH Zurich, Switzerland) Granted ≈10K€
+Title: “Physics‑Informed Large Language Models for Sequential Decision‑Making in Power Systems”
+My role: Conceived, wrote, and led this independent funding proposal.
+2023 Hellenic Foundation for Research and Innovation (TU Crete, Greece) Granted ≈200K€
+Title: “Deep‑Rebayes, Rethinking Equilibria: Deep GNNs‑based, Bayes‑Stable Strategic Decision‑
+Making under Uncertainty in Heterogeneous Multiagent Environments”
+My role: Co‑authored the task of agent‑based decision making in electricity systems.
+Publications
+Under Review (Preprints)
+U5. Gao, S., Orfanoudakis, S., Hou, S., Palensky, P., & Vergara P.P. (2026). Topology‑Aware Graph Reinforcement
+Learning for Energy Storage Systems Optimal Dispatch in Distribution Networks. Under review at Energy and AI,
+(waiting for first round), Available at: https://arxiv.org/abs/2603.26264.
+U4. Gao, T., Orfanoudakis, S., & Lin, N. (2026). Flow Matching Entropy Regularization. Under review at the Interna‑
+tional Conference on Machine Learning (ICML) 2026, Available at: https://arxiv.org/abs/2603.17685.
+U3. Orfanoudakis, S., & Vergara, P. P. (2026). SAVGO: Learning State–Action Value Geometry with Cosine Similarity for
+Continuous Control. Under review at the International Joint Conference on Artificial Intelligence (IJCAI).
+U2. Orfanoudakis, S., Oliehoek, F. A., Palensky, P., & Vergara, P. P. (2025). Physics‑Informed Reinforcement Learning
+APRiL 20, 2026 STAVROS ORFANOUDAKiS · CV 2/5
+
+-- 2 of 5 --
+
+for Large‑Scale EV Smart Charging Considering Distribution Network Voltage Constraints. Available at: https:
+//arxiv.org/abs/2510.12335, Under review at Applied Energy (second revision round).
+U1. Orfanoudakis, S., Palensky, P., & Vergara, P. P. (2025). Optimizing Electric Vehicle Charging Using Large Lan‑
+guage Models and Graph Neural Networks. Available at: https://arxiv.org/abs/2502.03067, Under review
+at International Journal of Electrical Power and Energy Systems (second revision round).
+Journal Publications
+J9. Orfanoudakis, S., Panda, N. K., Palensky, P., & Vergara, P. P. (2026). A Graph Neural Network‑Enhanced Decision
+Transformer for Efficient Optimization in Dynamic Smart Charging Environments. Energy and AI, 23, 100679.
+J8. Kaseb, Z., Orfanoudakis, S., Vergara, P. P., & Palensky, P. (2026). Physics‑Informed Neural Network with Adaptive
+Activation for Power Flow. International Journal of Electrical Power & Energy Systems, 174, 111525.
+J7. Diaz‑Londono*, C., Orfanoudakis*, S., Vergara, P. P., Palensky, P., Ruiz, F., & Gruosso, G. (2026). Open‑Source
+Algorithms for Maximizing V2G Flexibility Based on Model Predictive Control. Electric Power Systems Research, 250,
+112082.
+J6. Esser, M., Orfanoudakis, S., Homaee, O., Vahidinasab, V., Vergara, P. P., & Palensky, P. (2025). High‑Temporal‑
+Resolution Dataset of Uni‑, Bidirectional, and Dynamic Electric Vehicle Charging Profiles. Nature Scientific Data,
+12(1), 1192.
+J5. Orfanoudakis, S., Robu, V., Salazar, E. M., Palensky, P., & Vergara, P. P. (2025). Scalable Reinforcement Learning
+for Large‑Scale Coordination of Electric Vehicles Using Graph Neural Networks. Nature Communications Engineer‑
+ing, 4(1), 118.
+J4. Orfanoudakis, S., Diaz‑Londono, C., Yılmaz, Y. E., Palensky, P., & Vergara, P. P. (2024). EV2Gym: A Flexible V2G
+Simulator for EV Smart Charging Research and Benchmarking. IEEE Transactions on Intelligent Transportation
+Systems.
+J3. Kallinteris*, A., Orfanoudakis*, S., & Chalkiadakis, G. (2024). A Comprehensive Analysis of Agent Factorization
+and Learning Algorithms in Multiagent Systems. Autonomous Agents and Multi‑Agent Systems, 38(2), 27.
+J2. Lin*, N., Orfanoudakis*, S., Cardenas, N. O., Giraldo, J. S., & Vergara, P. P. (2024). PowerFlowNet: Power Flow
+Approximation Using Message Passing Graph Neural Networks. International Journal of Electrical Power & Energy
+Systems, 160, 110112.
+J1. Vogiatzis*, A., Orfanoudakis*, S., Chalkiadakis, G., Moirogiorgou, K., & Zervakis, M. (2022). Novel Meta‑Learning
+Techniques for the Multiclass Image Classification Problem. Sensors, 23(1), 9.
+* Equal Contribution
+Conference Publications
+C9. Orfanoudakis, S., Elders, B., Palensky, P., & Vergara, P.P. (2026) Can AI Accelerate EV Dispatch?. Machine Learn‑
+ing and Principles and Practice of Knowledge Discovery in Databases, Machine Learning for Power Systems Work‑
+shop. https://doi.org/10.1007/978-3-032-19102-1_1 (will be published in May).
+C8. Eland, R., Orfanoudakis, S., & Vergara, P.P. (2026) Safe Reinforcement Learning for V2G‑Enabled Electric Vehicle
+Aggregators. Machine Learning and Principles and Practice of Knowledge Discovery in Databases, Machine Learn‑
+ing for Power Systems Workshop. https://doi.org/10.1007/978-3-032-19102-1_5 (Published in May).
+C7. Ravanbach, B., Turhan, E., Wulff, N., Orfanoudakis, S., Vergara, P. P., & Palensky, P. (2024). A Dynamic Prediction
+Tool for Vehicle‑to‑Grid Operation and Planning. In Proceedings of the 2024 IEEE 22nd Mediterranean Electrotech‑
+nical Conference (MELECON) (pp. 610–615).
+C6. Martinez, N. A., Orfanoudakis, S., Vergara, P. P., & Franco, J. F. (2024). Energy Storage Systems Planning in the
+Electric Distribution System Considering the Growth of PV Penetration. In Proceedings of the 2024 IEEE Interna‑
+tional Conference on Environment and Electrical Engineering (EEEIC) (pp. 1–6).
+C5. Yunus, E., Orfanoudakis, S., & Vergara, P. P. (2024). Reinforcement Learning for Optimized EV Charging Through
+Power Setpoint Tracking. In IEEE PES Innovative Smart Grid Technologies Europe (ISGT Europe 2024).
+C4. Orfanoudakis, S., & Chalkiadakis, G. (2023). A Novel Aggregation Framework for the Efficient Integration of Dis‑
+tributed Energy Resources in the Smart Grid. In Proceedings of the International Conference on Autonomous Agents
+and Multi‑Agent Systems (AAMAS).
+C3. Kallinteris, A., Orfanoudakis, S., & Chalkiadakis, G. (2022). The Performance Impact of Combining Agent Factor‑
+ization with Different Learning Algorithms for Multiagent Coordination. In Proceedings of the 12th Hellenic Confer‑
+ence on Artificial Intelligence (SETN 2022).
+APRiL 20, 2026 STAVROS ORFANOUDAKiS · CV 3/5
+
+-- 3 of 5 --
+
+C2. Moirogiorgou, K., Raptopoulos, F., Livanos, G., Orfanoudakis, S., Papadogiorgaki, M., Zervakis, M. (2022). In‑
+telligent Robotic System for Urban Waste Recycling. In Proceedings of the 2022 IEEE International Conference on
+Imaging Systems and Techniques (IST 2022) (pp. 1–6).
+C1. Orfanoudakis, S., Kontos, S., Akasiadis, C., & Chalkiadakis, G. (2021). Aiming for Half Gets You to the Top: Winning
+PowerTAC 2020. In Proceedings of the European Conference on Multi‑Agent Systems (EUMAS 2021) (pp. 144–159).
+Invited Seminars, Workshops & Talks
+2025 Workshop, Can AI Accelerate EV Dispatch?, ECML PKDD, Porto, Portugal
+2025 Talk, Accelerating EV Adoption with Smart Charging Tools, Linux Foundation Energy Summit Eu‑
+rope, Aachen, Germany
+2025 Invited Talk, Optimizing Electric Vehicle Charging Using Large Language Models and Graph Neural
+Networks, CWI Amsterdam / Leiden University, The Netherlands
+2025 Seminar, Physics‑Informed Reinforcement Learning for Real‑Time Sequential Decision‑Making Under
+Uncertainty, CWI Amsterdam, The Netherlands
+2024 Invited Seminar, Scalable Reinforcement Learning for Large‑Scale Coordination of Electric Vehicles,
+Graphs & Data Seminar Series, TU Delft, The Netherlands
+Academic Community Service
+2026 – Present IEEE PES Task Force on Foundation Models for Power Grids, Member
+2022–Present Reviewed 50+ articles, for IEEE Transactions on Smart Grid, IEEE Transactions on Power Systems,
+IEEE Transactions on Transportation Electrification, IEEE Transactions on Intelligent Transportation
+Systems, IEEE Power Engineering Letters, Artificial Intelligence Review, Scientific Reports, Informa‑
+tion Fusion, Electric Power Systems Research, Applied Energy, Energy Science & Engineering, and
+IEEE Access. Reviewer for conferences: ISGT, PSCC, ECML, ECAI, NeurIPS, and ICML.
+Open‑Source Software
+2025 (16 stars, 4 forks) DT4EVs, Python package for offline EV charging optimization with decision transformers
+2024 (26 stars, 13 forks) EV‑GNN,Python package for graph‑based reinforcement learning in EV charging
+2024 (201 stars, 47 forks) EV2Gym, Python environment for large‑scale EV smart charging and V2G simulation
+2023 (71 stars, 12 forks) PowerFlowNet, Python package for graph neural network‑based power flow
+Technical Skills
+Programming Python, C++, Java, C#, C, SQL, MATLAB, JavaScript, PHP
+Machine Learning PyTorch, TensorFlow, Keras, Scikit‑learn, XGBoost, LightGBM, PyTorch Geometric
+Scientific Computing NumPy, SciPy, Pandas, Matplotlib, Seaborn, OpenCV, GurobiPy, Pyomo
+Software & Infrastructure Git, Bash, Linux, SLURM, VS Code, Weights & Biases, LaTeX
+Languages English (fluent), Greek (native), German (basic), Dutch (Basic)
+Academic References
+Dr. Pedro P. Vergara
+Associate Professor
+Faculty of Electrical Engineering, Mathematics, and Computer Science
+Delft University of Technology
+Phone: +31 15 27 85478
+Webpage | p.p.vergarabarrios@tudelft.nl
+Prof. Dr. Peter Palensky
+Professor
+Faculty of Electrical Engineering, Mathematics, and Computer Science
+Delft University of Technology
+Phone: +31 15 27 88341
+Webpage | p.palensky@tudelft.nl
+APRiL 20, 2026 STAVROS ORFANOUDAKiS · CV 4/5
+
+-- 4 of 5 --
+
+Dr. Elenna Dugundji
+Research Scientist
+Center of Transportation and Logistics
+Massachusetts Institute of Technology (MIT)
+Phone: —
+Webpage | elenna_d@mit.edu
+Prof. Dr. Georgios Chalkiadakis
+Professor
+School of Electrical and Computer Engineering
+Technical University of Crete
+Phone: +30 28210 37208
+Webpage | gchalkiadakis@tuc.gr
+APRiL 20, 2026 STAVROS ORFANOUDAKiS · CV 5/5
+
+-- 5 of 5 --
+

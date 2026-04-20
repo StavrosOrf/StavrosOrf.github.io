@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); font-family: var(--font-body); }
+  .card { padding: 24px 32px; }
+  .pub { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .pub:last-child { border: 0; }
+  .title { font-size: 15.5px; font-weight: 600; color: var(--ink-2); line-height: 1.4; margin-bottom: 4px; }
+  .title u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .byline { font-size: 13.5px; color: var(--ink-3); line-height: 1.5; }
+  .byline em { font-family: var(--font-accent); font-style: italic; color: var(--ink-2); }
+  .links { display: flex; gap: 10px; color: var(--delft-blue); font-size: 13px; align-items: center; flex-shrink: 0; padding-top: 3px; }
+  .links a { color: var(--delft-blue); text-decoration: none; }
+  .links a:hover { color: var(--delft-blue-2); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="pub">
+    <div>
+      <div class="title">GNN-DT: Graph Neural Network Enhanced Decision Transformer for Efficient Optimization in Dynamic Environments</div>
+      <div class="byline"><u>Stavros Orfanoudakis</u>, Nanda Kishor Panda, Peter Palensky, Pedro P. Vergara. <em>Preprint</em>, February 2025.</div>
+    </div>
+    <div class="links">
+      <a href="#" title="arXiv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="m7 7 10 10M17 7 7 17"/></svg></a>
+      <a href="#" title="PDF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></a>
+    </div>
+  </div>
+  <div class="pub">
+    <div>
+      <div class="title">EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking</div>
+      <div class="byline"><u>Stavros Orfanoudakis</u>, Cesar Diaz-Londono, Yunus Emre Yılmaz, Peter Palensky, Pedro P. Vergara. <em>IEEE Transactions on Intelligent Transportation Systems</em>, January 2024.</div>
+    </div>
+    <div class="links">
+      <a href="#">↗</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

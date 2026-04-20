@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); }
+  .card { padding: 36px 32px; display: flex; gap: 28px; align-items: flex-end; justify-content: space-between; }
+  .box { background: var(--paper-2); border: 1px solid rgba(24,32,28,0.06); width: 110px; height: 72px; border-radius: var(--r-md); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; }
+  .meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); text-align: center; line-height: 1.4; }
+  .meta b { color: var(--ink-2); }
+  .sh-hair  { box-shadow: 0 1px 0 rgba(24, 32, 28, 0.08); }
+  .sh-sm    { box-shadow: 0 1px 2px rgba(24, 32, 28, 0.06), 0 1px 3px rgba(24, 32, 28, 0.04); }
+  .sh-md    { box-shadow: 0 4px 12px rgba(24, 32, 28, 0.08), 0 1px 2px rgba(24, 32, 28, 0.04); }
+  .sh-lg    { box-shadow: 0 12px 28px rgba(24, 32, 28, 0.12), 0 2px 6px rgba(24, 32, 28, 0.06); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div><div class="box sh-hair"><div class="meta"><b>sh-hair</b><br>fixed bar</div></div></div>
+  <div><div class="box sh-sm"><div class="meta"><b>sh-sm</b><br>rest</div></div></div>
+  <div><div class="box sh-md"><div class="meta"><b>sh-md</b><br>hover</div></div></div>
+  <div><div class="box sh-lg"><div class="meta"><b>sh-lg</b><br>dialog</div></div></div>
+</div>
+</body>
+</html>

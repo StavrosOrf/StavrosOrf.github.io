@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); font-family: var(--font-body); }
+  .card { padding: 20px 32px; display: flex; gap: 28px; align-items: center; }
+  .portrait {
+    width: 112px; height: 112px; border-radius: 50%;
+    border: 1px solid var(--ink-2);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .info h3 { font-family: var(--font-display); font-size: 26px; font-weight: 600; letter-spacing: -0.015em; color: var(--ink-2); margin: 0 0 4px; line-height: 1.1; }
+  .info .sub { font-family: var(--font-accent); font-style: italic; font-size: 17px; color: var(--grid-green); margin-bottom: 6px; }
+  .info p { font-size: 13.5px; line-height: 1.55; color: var(--ink); margin: 0; max-width: 360px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="portrait"><img src="../assets/stavros_profile.jpeg" alt="Stavros Orfanoudakis"></div>
+  <div class="info">
+    <h3>Stavros Orfanoudakis</h3>
+    <div class="sub">PhD Researcher, TU Delft</div>
+    <p>Circular portrait, 1px ink border, no drop shadow. Warm neutral anchor of the palette — the entire paper-and-ink system keys off this image.</p>
+  </div>
+</div>
+</body>
+</html>

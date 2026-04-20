@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); font-family: var(--font-body); }
+  .card { padding: 20px 32px; display: flex; gap: 16px; align-items: center; }
+  .row { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .label { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.02em; }
+  input, select {
+    font-family: var(--font-body); font-size: 14px;
+    padding: 10px 12px;
+    background: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    border-radius: var(--r-md);
+    outline: none;
+    transition: border-color 140ms;
+  }
+  input:focus, select:focus { border-color: var(--grid-green); box-shadow: 0 0 0 3px var(--grid-green-3); }
+  input::placeholder { color: var(--ink-4); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="row">
+    <div class="label">EMAIL</div>
+    <input type="email" placeholder="you@institution.edu" value="s.orfanoudakis@tudelft.nl">
+  </div>
+  <div class="row">
+    <div class="label">YEAR</div>
+    <select>
+      <option>All years</option><option>2025</option><option>2024</option><option>2023</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="label">SEARCH</div>
+    <input type="text" placeholder="Search publications…">
+  </div>
+</div>
+</body>
+</html>

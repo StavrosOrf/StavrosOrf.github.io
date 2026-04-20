@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); font-family: var(--font-body); }
+  .card { padding: 20px 32px; display: flex; align-items: center; gap: 24px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .monogram { font-family: var(--font-display); font-size: 36px; font-weight: 600; line-height: 1; color: var(--ink-2); letter-spacing: -0.04em; font-variation-settings: "opsz" 144; }
+  .wordmark { display: flex; flex-direction: column; gap: 1px; }
+  .name { font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--ink-2); letter-spacing: -0.01em; line-height: 1; }
+  .sub { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; }
+  .fav { width: 32px; height: 32px; border: 1px solid var(--rule); border-radius: var(--r-sm); background: #fff; padding: 4px; object-fit: contain; }
+  .spacer { flex: 1; }
+  .meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.02em; line-height: 1.5; }
+  .meta b { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">
+    <div class="monogram">S.</div>
+    <div class="wordmark">
+      <div class="name">Stavros Orfanoudakis</div>
+      <div class="sub">AI Researcher · ETH Zürich / TU Delft</div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <img class="fav" src="../assets/letter-s.png" alt="favicon">
+  <div class="meta"><b>Typographic monogram</b><br>Fraunces 600 · opsz 144</div>
+</div>
+</body>
+</html>

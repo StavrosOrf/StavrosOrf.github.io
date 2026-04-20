@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); font-family: var(--font-body); }
+  .card { padding: 24px 32px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: var(--r-pill); font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em; font-family: var(--font-body); text-transform: uppercase; }
+  .tag.published { background: var(--grid-green-3); color: #145b38; }
+  .tag.preprint  { background: #f5e9cc; color: #7a5612; }
+  .tag.in-review { background: var(--paper-3); color: var(--ink-2); }
+  .tag.winner    { background: var(--ink-2); color: var(--paper); }
+  .tag.year      { background: transparent; color: var(--ink-3); border: 1px solid var(--rule); font-family: var(--font-mono); text-transform: none; letter-spacing: 0.02em; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="tag published"><span class="dot"></span>Published</span>
+  <span class="tag preprint"><span class="dot"></span>Preprint</span>
+  <span class="tag in-review"><span class="dot"></span>In review</span>
+  <span class="tag winner">★ PowerTAC 2020 winner</span>
+  <span class="tag year">2025</span>
+  <span class="tag year">IEEE TITS</span>
+  <span class="tag year">AAMAS '23</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--ink-bg); color: var(--ink-fg); }
+  .card { padding: 28px 32px; }
+  .eyebrow { color: var(--grid-green-2); margin-bottom: 14px; }
+  .row { display: flex; gap: 14px; }
+  .swatch {
+    flex: 1; height: 112px; border-radius: var(--r-md);
+    border: 1px solid rgba(232,228,212,0.08);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 10px 12px;
+  }
+  .swatch .label { font-family: var(--font-mono); font-size: 10.5px; line-height: 1.2; }
+  .swatch .name { font-weight: 600; }
+  .swatch .hex { opacity: 0.75; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">Dark theme · night ink</div>
+  <div class="row">
+    <div class="swatch" style="background:#11140f;color:#e8e4d4;">
+      <div class="label"><div class="name">ink-bg</div><div class="hex">#11140F</div></div>
+    </div>
+    <div class="swatch" style="background:#1a1e18;color:#e8e4d4;">
+      <div class="label"><div class="name">ink-bg-2</div><div class="hex">#1A1E18</div></div>
+    </div>
+    <div class="swatch" style="background:#252a23;color:#e8e4d4;">
+      <div class="label"><div class="name">ink-bg-3</div><div class="hex">#252A23</div></div>
+    </div>
+    <div class="swatch" style="background:#8e9384;color:#11140f;">
+      <div class="label"><div class="name">ink-fg-3</div><div class="hex">#8E9384</div></div>
+    </div>
+    <div class="swatch" style="background:#c8c3b1;color:#11140f;">
+      <div class="label"><div class="name">ink-fg-2</div><div class="hex">#C8C3B1</div></div>
+    </div>
+    <div class="swatch" style="background:#e8e4d4;color:#11140f;">
+      <div class="label"><div class="name">ink-fg</div><div class="hex">#E8E4D4</div></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

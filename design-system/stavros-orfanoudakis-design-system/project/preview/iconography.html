@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); font-family: var(--font-body); }
+  .card { padding: 22px 32px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .group { display: flex; flex-direction: column; gap: 10px; }
+  .row { display: flex; gap: 14px; color: var(--ink-2); font-size: 22px; align-items: center; }
+  .row i { width: 28px; text-align: center; }
+  .label { font-family: var(--font-mono); font-size: 10px; color: var(--ink-3); letter-spacing: 0.02em; }
+  .label b { color: var(--ink-2); font-weight: 600; }
+  .divider { width: 1px; height: 54px; background: var(--rule); }
+  /* lucide */
+  .lu { stroke: var(--ink-2); stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="group">
+    <div class="row">
+      <i class="fab fa-google"></i>
+      <i class="fab fa-orcid"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-github"></i>
+    </div>
+    <div class="label"><b>Font Awesome Brands</b> · social / publication</div>
+  </div>
+  <div class="divider"></div>
+  <div class="group">
+    <div class="row">
+      <i class="fas fa-external-link-alt"></i>
+      <i class="fas fa-file-pdf"></i>
+      <i class="fa-solid fa-book"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+    <div class="label"><b>Font Awesome Solid</b> · paper + utility</div>
+  </div>
+  <div class="divider"></div>
+  <div class="group">
+    <div class="row" style="gap:16px;">
+      <svg class="lu" width="22" height="22" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <svg class="lu" width="22" height="22" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 10h16"/><path d="M10 4v16"/></svg>
+      <svg class="lu" width="22" height="22" viewBox="0 0 24 24"><path d="m12 3 2.5 6 6.5.5-5 4.5 1.5 6.5L12 17l-5.5 3.5L8 14l-5-4.5 6.5-.5z"/></svg>
+      <svg class="lu" width="22" height="22" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </div>
+    <div class="label"><b>Lucide</b> · new UI · 1.5px stroke</div>
+  </div>
+</div>
+</body>
+</html>

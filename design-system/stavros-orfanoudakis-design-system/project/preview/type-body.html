@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); }
+  .card { padding: 28px 32px; display: flex; gap: 32px; }
+  .col { flex: 1; }
+  .tag { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.02em; margin-bottom: 8px; }
+  .tag b { color: var(--ink-2); font-weight: 600; }
+  .lead { font-size: 18px; line-height: 1.45; color: var(--ink-2); margin: 0 0 10px; }
+  .body { font-size: 16px; line-height: 1.65; color: var(--ink); margin: 0; }
+  .body u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .body em { font-family: var(--font-accent); font-style: italic; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="col">
+    <div class="tag"><b>Lead</b> · Plex Sans · 18/1.45</div>
+    <p class="lead">My research focuses on developing scalable machine learning algorithms, including reinforcement learning, to optimize city-wide electric vehicle charging schedules.</p>
+  </div>
+  <div class="col">
+    <div class="tag"><b>Body</b> · Plex Sans · 17/1.65</div>
+    <p class="body"><u>Stavros Orfanoudakis</u>, Nanda Kishor Panda, Peter Palensky, Pedro P. Vergara. <em>IEEE Transactions on Intelligent Transportation Systems</em>, February 2025.</p>
+  </div>
+</div>
+</body>
+</html>

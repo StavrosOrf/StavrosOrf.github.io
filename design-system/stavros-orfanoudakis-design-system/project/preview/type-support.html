@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); }
+  .card { padding: 28px 32px; display: flex; flex-direction: column; gap: 16px; }
+  .row { display: flex; align-items: center; gap: 20px; }
+  .label { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.02em; width: 140px; flex-shrink: 0; }
+  .label b { color: var(--ink-2); font-weight: 600; }
+  .eyebrow { font-family: var(--font-body); font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--grid-green); }
+  .meta { font-family: var(--font-mono); font-size: 13px; color: var(--ink-3); letter-spacing: 0.02em; }
+  .caption { font-size: 15px; color: var(--ink-3); }
+  .mono-sample { font-family: var(--font-mono); font-size: 14px; color: var(--ink-2); background: var(--paper-2); padding: 4px 8px; border-radius: var(--r-sm); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="row"><div class="label"><b>Eyebrow</b><br>Plex 11.5 · 0.14em</div><div class="eyebrow">Peer-reviewed · 2025</div></div>
+  <div class="row"><div class="label"><b>Caption</b><br>Plex Sans 15</div><div class="caption">Profile photograph, Delft, 2024.</div></div>
+  <div class="row"><div class="label"><b>Meta / date</b><br>Plex Mono 13</div><div class="meta">2024-03-12 · arXiv:2502.01778</div></div>
+  <div class="row"><div class="label"><b>Code / ID</b><br>Plex Mono 14</div><div class="mono-sample">doi:10.1109/TITS.2024.10803908</div></div>
+</div>
+</body>
+</html>

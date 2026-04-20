@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); font-family: var(--font-body); }
+  .card { padding: 24px 32px; }
+  .timeline { position: relative; padding-left: 40px; }
+  .timeline::before { content: ''; position: absolute; left: 10px; top: 6px; bottom: 6px; width: 1px; background: var(--rule); }
+  .item { position: relative; padding-bottom: 14px; }
+  .item:last-child { padding-bottom: 0; }
+  .item::before { content: ''; position: absolute; left: -34px; top: 7px; width: 9px; height: 9px; border-radius: 50%; background: var(--grid-green); border: 2px solid var(--paper); box-shadow: 0 0 0 1px var(--grid-green); }
+  .year { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); letter-spacing: 0.08em; margin-bottom: 2px; }
+  .body { font-size: 14px; color: var(--ink); line-height: 1.5; }
+  .body em { font-family: var(--font-accent); font-style: italic; color: var(--ink-2); }
+  .body a { color: var(--delft-blue); text-decoration: underline; text-underline-offset: 3px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="timeline">
+    <div class="item">
+      <div class="year">FEB 2025</div>
+      <div class="body">Published <a href="#">EV2Gym</a>, the first chapter of my PhD work in <em>IEEE Transactions on Intelligent Transportation Systems</em>.</div>
+    </div>
+    <div class="item">
+      <div class="year">JUN 2024</div>
+      <div class="body">Attended the 7th Advanced Course on Data Science &amp; Machine Learning.</div>
+    </div>
+    <div class="item">
+      <div class="year">APR 2023</div>
+      <div class="body">Started my PhD at TU Delft, Intelligent Electrical Power Grids Group.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

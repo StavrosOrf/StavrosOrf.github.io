@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); }
+  .card { padding: 28px 32px; }
+  .row { display: flex; gap: 14px; align-items: flex-end; }
+  .swatch {
+    flex: 1; height: 112px; border-radius: var(--r-md);
+    border: 1px solid rgba(24,32,28,0.08);
+    box-shadow: var(--sh-sm);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 10px 12px;
+    position: relative;
+  }
+  .swatch .label {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+  .swatch .name { font-weight: 600; }
+  .swatch .hex { opacity: 0.75; }
+  .eyebrow { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">Neutrals · paper &amp; ink</div>
+  <div class="row">
+    <div class="swatch" style="background:#f4f1e8;color:var(--ink-2);">
+      <div class="label"><div class="name">paper</div><div class="hex">#F4F1E8</div></div>
+    </div>
+    <div class="swatch" style="background:#eae5d6;color:var(--ink-2);">
+      <div class="label"><div class="name">paper-2</div><div class="hex">#EAE5D6</div></div>
+    </div>
+    <div class="swatch" style="background:#ded7c3;color:var(--ink-2);">
+      <div class="label"><div class="name">paper-3</div><div class="hex">#DED7C3</div></div>
+    </div>
+    <div class="swatch" style="background:#c9c2ad;color:var(--ink-2);">
+      <div class="label"><div class="name">rule</div><div class="hex">#C9C2AD</div></div>
+    </div>
+    <div class="swatch" style="background:#8a907f;color:#f4f1e8;">
+      <div class="label"><div class="name">ink-4</div><div class="hex">#8A907F</div></div>
+    </div>
+    <div class="swatch" style="background:#5a6459;color:#f4f1e8;">
+      <div class="label"><div class="name">ink-3</div><div class="hex">#5A6459</div></div>
+    </div>
+    <div class="swatch" style="background:#2c362f;color:#f4f1e8;">
+      <div class="label"><div class="name">ink-2</div><div class="hex">#2C362F</div></div>
+    </div>
+    <div class="swatch" style="background:#18201c;color:#f4f1e8;">
+      <div class="label"><div class="name">ink</div><div class="hex">#18201C</div></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

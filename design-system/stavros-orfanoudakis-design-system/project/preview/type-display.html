@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--paper); }
+  .card { padding: 32px; display: flex; gap: 40px; align-items: flex-end; }
+  .specimen { flex: 1; }
+  .sample {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 84px;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    color: var(--ink-2);
+    font-variation-settings: "opsz" 144, "SOFT" 50;
+  }
+  .sample em { font-family: var(--font-accent); font-style: italic; font-weight: 400; color: var(--grid-green); }
+  .meta { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); letter-spacing: 0.02em; margin-top: 10px; line-height: 1.5; }
+  .meta b { color: var(--ink-2); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="specimen">
+    <div class="sample">Power <em>&amp;</em> grids.</div>
+    <div class="meta">
+      <b>Fraunces</b> · Display · opsz 144 · 600 · -0.03em<br>
+      <b>Instrument Serif Italic</b> · accent
+    </div>
+  </div>
+</div>
+</body>
+</html>
