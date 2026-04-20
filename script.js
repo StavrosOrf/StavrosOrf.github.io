@@ -54,5 +54,51 @@
         applyTheme(nextTheme);
       });
     });
+
+    const formatCompactNumber = (value) =>
+      new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
+
+    const updateGitHubIndicators = async () => {
+      const projects = document.querySelectorAll('[data-github-repo]');
+      if (!projects.length) {
+        return;
+      }
+
+      await Promise.all(
+        Array.from(projects).map(async (project) => {
+          const repo = project.getAttribute('data-github-repo');
+          const starsEl = project.querySelector('[data-github-stars]');
+          const forksEl = project.querySelector('[data-github-forks]');
+
+          if (!repo || !starsEl || !forksEl) {
+            return;
+          }
+
+          try {
+            const response = await fetch(`https://api.github.com/repos/${repo}`, {
+              headers: {
+                Accept: 'application/vnd.github+json'
+              }
+            });
+
+            if (!response.ok) {
+              return;
+            }
+
+            const data = await response.json();
+            if (typeof data.stargazers_count === 'number') {
+              starsEl.textContent = `GitHub stars ${formatCompactNumber(data.stargazers_count)}`;
+            }
+            if (typeof data.forks_count === 'number') {
+              forksEl.textContent = `Forks ${formatCompactNumber(data.forks_count)}`;
+            }
+          } catch (error) {
+            // Keep the static fallback values if the API request fails.
+          }
+        })
+      );
+    };
+
+    updateGitHubIndicators();
   });
 })();

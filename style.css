@@ -538,49 +538,61 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   border-width: 1px;
   box-shadow: none;
 }
-.so-publications .so-pub__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]) {
+.so-pub__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]),
+.so-project__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]) {
   background: color-mix(in oklch, var(--delft-blue) 14%, var(--paper));
   color: color-mix(in oklch, var(--delft-blue) 76%, var(--ink));
   border-color: color-mix(in oklch, var(--delft-blue) 28%, var(--rule));
 }
-.so-publications .so-pub__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]):hover {
+.so-pub__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]):hover,
+.so-project__links a.so-btn:not([href*="arxiv.org"]):not([href*="github.com"]):not([href*="repository.tudelft.nl"]):not([href$=".pdf"]):not([href*="/files/"]):hover {
   background: color-mix(in oklch, var(--delft-blue) 22%, var(--paper));
   color: color-mix(in oklch, var(--delft-blue) 86%, var(--ink));
 }
-.so-publications .so-pub__links a.so-btn[href*="arxiv.org"] {
+.so-pub__links a.so-btn[href*="arxiv.org"],
+.so-project__links a.so-btn[href*="arxiv.org"] {
   background: color-mix(in oklch, var(--signal-amber) 18%, var(--paper));
   color: color-mix(in oklch, var(--signal-amber) 82%, var(--ink));
   border-color: color-mix(in oklch, var(--signal-amber) 34%, var(--rule));
 }
-.so-publications .so-pub__links a.so-btn[href*="arxiv.org"]:hover {
+.so-pub__links a.so-btn[href*="arxiv.org"]:hover,
+.so-project__links a.so-btn[href*="arxiv.org"]:hover {
   background: color-mix(in oklch, var(--signal-amber) 26%, var(--paper));
 }
-.so-publications .so-pub__links a.so-btn[href*="github.com"] {
+.so-pub__links a.so-btn[href*="github.com"],
+.so-project__links a.so-btn[href*="github.com"] {
   background: color-mix(in oklch, var(--grid-green) 16%, var(--paper));
   color: color-mix(in oklch, var(--grid-green) 82%, var(--ink));
   border-color: color-mix(in oklch, var(--grid-green) 32%, var(--rule));
 }
-.so-publications .so-pub__links a.so-btn[href*="github.com"]:hover {
+.so-pub__links a.so-btn[href*="github.com"]:hover,
+.so-project__links a.so-btn[href*="github.com"]:hover {
   background: color-mix(in oklch, var(--grid-green) 24%, var(--paper));
 }
-.so-publications .so-pub__links a.so-btn[href$=".pdf"],
-.so-publications .so-pub__links a.so-btn[href*="/files/"],
-.so-publications .so-pub__links a.so-btn[href*="repository.tudelft.nl"] {
+.so-pub__links a.so-btn[href$=".pdf"],
+.so-pub__links a.so-btn[href*="/files/"],
+.so-pub__links a.so-btn[href*="repository.tudelft.nl"],
+.so-project__links a.so-btn[href$=".pdf"],
+.so-project__links a.so-btn[href*="/files/"],
+.so-project__links a.so-btn[href*="repository.tudelft.nl"] {
   background: color-mix(in oklch, var(--signal-rust) 14%, var(--paper));
   color: color-mix(in oklch, var(--signal-rust) 84%, var(--ink));
   border-color: color-mix(in oklch, var(--signal-rust) 30%, var(--rule));
 }
-.so-publications .so-pub__links a.so-btn[href$=".pdf"]:hover,
-.so-publications .so-pub__links a.so-btn[href*="/files/"]:hover,
-.so-publications .so-pub__links a.so-btn[href*="repository.tudelft.nl"]:hover {
+.so-pub__links a.so-btn[href$=".pdf"]:hover,
+.so-pub__links a.so-btn[href*="/files/"]:hover,
+.so-pub__links a.so-btn[href*="repository.tudelft.nl"]:hover,
+.so-project__links a.so-btn[href$=".pdf"]:hover,
+.so-project__links a.so-btn[href*="/files/"]:hover,
+.so-project__links a.so-btn[href*="repository.tudelft.nl"]:hover {
   background: color-mix(in oklch, var(--signal-rust) 22%, var(--paper));
 }
-.so-publications .so-pub__links .so-cite-trigger {
+.so-pub__links .so-cite-trigger {
   background: color-mix(in oklch, #8b4ab8 16%, var(--paper));
   color: color-mix(in oklch, #8b4ab8 78%, var(--ink));
   border-color: color-mix(in oklch, #8b4ab8 32%, var(--rule));
 }
-.so-publications .so-pub__links .so-cite-trigger:hover {
+.so-pub__links .so-cite-trigger:hover {
   background: color-mix(in oklch, #8b4ab8 24%, var(--paper));
 }
 
