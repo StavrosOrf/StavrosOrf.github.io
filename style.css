@@ -266,13 +266,25 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 }
 .so-intro__side { display: flex; flex-direction: column; gap: 28px; align-items: flex-start; }
 .so-intro__portrait {
-  width: 220px; height: 220px;
-  border-radius: 50%;
-  border: 1px solid var(--ink-2);
+  width: 248px;
+  height: 312px;
+  border-radius: 28px;
+  border: 1px solid var(--rule);
   overflow: hidden;
   margin: 0 auto;
+  padding: 10px;
+  background:
+    linear-gradient(180deg, color-mix(in oklch, var(--paper) 88%, white) 0%, var(--paper-2) 100%);
+  box-shadow: var(--sh-md);
 }
-.so-intro__portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.so-intro__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+  border-radius: 20px;
+}
 .so-intro__interests ul {
   list-style: none; padding: 0; margin: 12px 0 0;
   display: flex; flex-direction: column; gap: 6px;
@@ -394,8 +406,8 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   margin-bottom: 3px;
 }
 .so-tl-body { font-size: 15.5px; line-height: 1.5; color: var(--ink); max-width: 640px; }
-.so-home .so-timeline { max-width: 920px; }
-.so-home .so-tl-body { max-width: 860px; }
+.so-home .so-timeline { width: 100%; max-width: none; }
+.so-home .so-tl-body { width: 100%; max-width: none; }
 .so-tl-body em { font-family: var(--font-accent); font-style: italic; color: var(--ink-2); }
 .so-tl-body a { color: var(--delft-blue); }
 
@@ -649,7 +661,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   .so-page { padding: 36px 20px 32px; }
   .so-intro { grid-template-columns: 1fr; gap: 32px; }
   .so-home .so-rule { margin: 28px 0 22px; }
-  .so-intro__portrait { width: 180px; height: 180px; }
+  .so-intro__portrait { width: 220px; height: 280px; padding: 8px; }
   .so-intro__edu { grid-template-columns: 1fr; max-width: 640px; }
   .so-intro__quote { padding: 16px 18px 16px 20px; }
   .so-intro__quote blockquote { font-size: 21px; }
