@@ -6,6 +6,7 @@
 <title>Teaching · Stavros Orfanoudakis</title>
 <meta name="description" content="Lectures, tutorials, and MSc thesis supervision across ETH Zürich, MIT, TU Delft, and the Technical University of Crete." />
 <link rel="icon" type="image/png" href="figures/letter-s.png" />
+<script>try{const t=localStorage.getItem('so-theme');if(t){document.documentElement.dataset.theme=t}else if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.dataset.theme='dark'}}catch(e){}</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,12 +21,18 @@
         <span class="so-nav__sub">Research Scholar · ETH Zürich</span>
       </span>
     </a>
-    <nav class="so-nav__tabs">
-      <a class="so-nav__tab" href="index.html">Home</a>
-      <a class="so-nav__tab" href="publications.html">Publications</a>
-      <a class="so-nav__tab" href="projects.html">Projects</a>
-      <a class="so-nav__tab is-active" href="teaching.html">Teaching</a>
-    </nav>
+    <div class="so-nav__actions">
+      <nav class="so-nav__tabs">
+        <a class="so-nav__tab" href="index.html">Home</a>
+        <a class="so-nav__tab" href="publications.html">Publications</a>
+        <a class="so-nav__tab" href="projects.html">Projects</a>
+        <a class="so-nav__tab is-active" href="teaching.html">Teaching</a>
+      </nav>
+      <button class="so-btn so-btn--secondary so-btn--sm so-theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+        <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
+        <span data-theme-label>Dark mode</span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -50,8 +57,10 @@
           <div class="so-student__thesis"><em>AI Minor Program</em></div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">TU Delft</span>
-          <span class="so-meta">2025</span>
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
         </div>
       </div>
 
@@ -61,8 +70,10 @@
           <div class="so-student__thesis"><em>InnoCyPES Colloquium</em></div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">TU Delft</span>
-          <span class="so-meta">2025</span>
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
         </div>
       </div>
 
@@ -72,8 +83,10 @@
           <div class="so-student__thesis"><em>Tutorials &amp; Project Supervision</em></div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">Technical University of Crete</span>
-          <span class="so-meta">2021 – 2022</span>
+          <div class="so-student__meta">
+            <span class="so-meta">Technical University of Crete</span>
+            <span class="so-meta">2021 – 2022</span>
+          </div>
         </div>
       </div>
 
@@ -83,8 +96,10 @@
           <div class="so-student__thesis"><em>Tutorials &amp; Project Supervision</em></div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">Technical University of Crete</span>
-          <span class="so-meta">2021 – 2022</span>
+          <div class="so-student__meta">
+            <span class="so-meta">Technical University of Crete</span>
+            <span class="so-meta">2021 – 2022</span>
+          </div>
         </div>
       </div>
 
@@ -102,13 +117,15 @@
         <div class="so-student__l">
           <div class="so-student__name">Bibi van den Berg</div>
           <div class="so-student__thesis"><em>Quantifying the Economic V2G Benefits: Cost-Optimal V2G Integration in Residential Settings</em></div>
-          <div class="so-student__actions">
-            <a class="so-btn so-btn--ghost so-btn--sm" href="publications.html#pub-v2g-flexibility">Related publication</a>
-          </div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">TU Delft</span>
-          <span class="so-meta">2025</span>
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="publications.html#pub-v2g-flexibility"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
         </div>
       </div>
 
@@ -116,13 +133,16 @@
         <div class="so-student__l">
           <div class="so-student__name">Ruben Eland</div>
           <div class="so-student__thesis"><em>Improving EV Aggregators' Workplace Charging: A Safe Reinforcement Learning Approach</em></div>
-          <div class="so-student__actions">
-            <a class="so-btn so-btn--ghost so-btn--sm" href="publications.html#pub-safe-rl-v2g">Related publication</a>
-          </div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">TU Delft</span>
-          <span class="so-meta">2025</span>
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2025</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="https://repository.tudelft.nl/record/uuid:22ec1d00-4fae-44d6-a154-734c20f62bc6" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Thesis</a>
+            <a class="so-btn so-btn--secondary so-btn--sm" href="publications.html#pub-safe-rl-v2g"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
         </div>
       </div>
 
@@ -130,14 +150,16 @@
         <div class="so-student__l">
           <div class="so-student__name">Yunus Emre Yılmaz</div>
           <div class="so-student__thesis"><em>EV Charging Strategies through Power Setpoint Tracking: A Reinforcement Learning Approach</em></div>
-          <div class="so-student__actions">
-            <a class="so-btn so-btn--ghost so-btn--sm" href="https://repository.tudelft.nl/record/uuid:233a3c57-3a03-4498-ae8f-aa6d28098177" target="_blank" rel="noopener">Master thesis</a>
-            <a class="so-btn so-btn--ghost so-btn--sm" href="publications.html#pub-power-setpoint">Related publication</a>
-          </div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">TU Delft</span>
-          <span class="so-meta">2024</span>
+          <div class="so-student__meta">
+            <span class="so-meta">TU Delft</span>
+            <span class="so-meta">2024</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="https://repository.tudelft.nl/record/uuid:233a3c57-3a03-4498-ae8f-aa6d28098177" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Thesis</a>
+            <a class="so-btn so-btn--secondary so-btn--sm" href="publications.html#pub-power-setpoint"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
         </div>
       </div>
 
@@ -145,14 +167,16 @@
         <div class="so-student__l">
           <div class="so-student__name">Antonios Mastorakis</div>
           <div class="so-student__thesis"><em>Development of a Competitive Autonomous Agent for Smart-Grid Energy Markets</em></div>
-          <div class="so-student__actions">
-            <a class="so-btn so-btn--ghost so-btn--sm" href="https://dias.library.tuc.gr/view/94575?locale=en" target="_blank" rel="noopener">Master thesis</a>
-            <a class="so-btn so-btn--ghost so-btn--sm" href="publications.html#pub-powertac">Related publication</a>
-          </div>
         </div>
         <div class="so-student__r">
-          <span class="so-meta">Technical University of Crete</span>
-          <span class="so-meta">2022</span>
+          <div class="so-student__meta">
+            <span class="so-meta">Technical University of Crete</span>
+            <span class="so-meta">2022</span>
+          </div>
+          <div class="so-student__actions">
+            <a class="so-btn so-btn--secondary so-btn--sm" href="https://dias.library.tuc.gr/view/94575?locale=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Thesis</a>
+            <a class="so-btn so-btn--secondary so-btn--sm" href="publications.html#pub-powertac"><i class="fas fa-file-lines" aria-hidden="true"></i>Related paper</a>
+          </div>
         </div>
       </div>
 
@@ -173,6 +197,7 @@
     <span class="so-foot__upd">sorfanoudaki@ethz.ch</span>
   </div>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
