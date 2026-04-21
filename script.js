@@ -96,6 +96,7 @@
     }
 
     const linksByHash = new Map(navLinks.map((link) => [link.getAttribute('href'), link]));
+    const tabSections = sections.filter((section) => section.id && linksByHash.has(`#${section.id}`));
 
     const setActiveSection = (sectionId) => {
       navLinks.forEach((link) => {
@@ -127,6 +128,24 @@
       });
     };
 
+    const updateActiveTabByScrollPosition = () => {
+      if (!tabSections.length) {
+        return;
+      }
+
+      const navHeight = document.querySelector('.so-nav')?.offsetHeight || 0;
+      const anchorY = window.scrollY + navHeight + 20;
+      let currentSection = tabSections[0];
+
+      tabSections.forEach((section) => {
+        if (section.offsetTop <= anchorY) {
+          currentSection = section;
+        }
+      });
+
+      setActiveSection(currentSection.id);
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         const visibleEntries = entries
@@ -137,7 +156,14 @@
         }
 
         const active = visibleEntries[0].target;
-        setActiveSection(active.id);
+        const activeTabEntry = visibleEntries.find((entry) =>
+          entry.target.id && linksByHash.has(`#${entry.target.id}`)
+        );
+
+        if (activeTabEntry) {
+          setActiveSection(activeTabEntry.target.id);
+        }
+
         updatePanelVisibility(active.id);
       },
       {
@@ -149,13 +175,30 @@
 
     sections.forEach((section) => observer.observe(section));
 
+    let isTicking = false;
+    const queueActiveTabUpdate = () => {
+      if (isTicking) {
+        return;
+      }
+      isTicking = true;
+      window.requestAnimationFrame(() => {
+        updateActiveTabByScrollPosition();
+        isTicking = false;
+      });
+    };
+
+    window.addEventListener('scroll', queueActiveTabUpdate, { passive: true });
+    window.addEventListener('resize', queueActiveTabUpdate);
+
     const initialHash = window.location.hash;
     const initialLink = initialHash ? linksByHash.get(initialHash) : null;
-    const initialSection = initialLink ? document.querySelector(initialHash) : sections[0];
+    const initialSection = initialLink ? document.querySelector(initialHash) : tabSections[0];
     if (initialSection) {
       setActiveSection(initialSection.id);
       updatePanelVisibility(initialSection.id);
     }
+
+    updateActiveTabByScrollPosition();
   };
 
   document.addEventListener('DOMContentLoaded', () => {

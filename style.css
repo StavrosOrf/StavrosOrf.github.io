@@ -369,6 +369,15 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-btn--primary:hover { background: var(--grid-green-2); color: var(--paper); }
 .so-btn--secondary { background: var(--paper-2); color: var(--ink-2); border-color: var(--rule); }
 .so-btn--secondary:hover { background: var(--paper-3); color: var(--ink-2); }
+.so-btn--dataset {
+  background: color-mix(in oklch, var(--grid-green) 18%, var(--paper));
+  color: color-mix(in oklch, var(--grid-green) 86%, var(--ink));
+  border-color: color-mix(in oklch, var(--grid-green) 34%, var(--rule));
+}
+.so-btn--dataset:hover {
+  background: color-mix(in oklch, var(--grid-green) 28%, var(--paper));
+  color: color-mix(in oklch, var(--grid-green) 92%, var(--ink));
+}
 .so-btn--ghost { background: transparent; color: var(--ink-2); }
 .so-btn--ghost:hover { color: var(--grid-green); text-decoration: none; }
 .so-btn--sm { padding: 7px 12px; font-size: 13px; }
@@ -576,14 +585,33 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   margin-right: auto;
 }
 .so-panel--highlights .so-pub {
-  grid-template-columns: 1fr;
+  grid-template-columns: clamp(180px, 30vw, 260px) minmax(0, 1fr);
   grid-template-areas:
-    "tags"
-    "title"
-    "byline"
-    "links";
-  justify-items: center;
-  text-align: center;
+    "figure tags"
+    "figure title"
+    "figure byline"
+    "figure links";
+  align-items: center;
+  column-gap: 24px;
+}
+.so-panel--highlights .so-pub__figure {
+  grid-area: figure;
+  width: clamp(180px, 30vw, 260px);
+  aspect-ratio: 16 / 10;
+  margin: 0;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid color-mix(in oklch, var(--rule) 70%, transparent);
+  box-shadow: var(--sh-sm);
+  background: transparent;
+  align-self: center;
+}
+.so-panel--highlights .so-pub__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 .so-panel--highlights .so-pub__tags,
 .so-panel--highlights .so-pub__links {
@@ -592,6 +620,13 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-panel--highlights .so-pub__title,
 .so-panel--highlights .so-pub__byline {
   max-width: 860px;
+}
+.so-panel--highlights .so-pub__tags,
+.so-panel--highlights .so-pub__title,
+.so-panel--highlights .so-pub__byline,
+.so-panel--highlights .so-pub__links {
+  justify-self: center;
+  text-align: center;
 }
 
 /* ---------- Publication list ---------- */
@@ -884,6 +919,23 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-student__meta { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
 
 /* ---------- Courses section ---------- */
+.so-panel--teaching .so-section,
+.so-panel--teaching .so-courses,
+.so-panel--teaching .so-theses {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.so-panel--teaching .so-courses .so-students,
+.so-panel--teaching .so-theses .so-students {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.so-panel--teaching .so-theses {
+  margin-top: 64px;
+}
 .so-courses .so-students { gap: 14px; }
 .so-courses .so-student {
   padding: 18px 20px;
@@ -941,6 +993,14 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-theses .so-student__actions a.so-btn[href*="repository.tudelft.nl"]:hover,
 .so-theses .so-student__actions a.so-btn[href*="dias.library.tuc.gr"]:hover {
   background: color-mix(in oklch, var(--signal-rust) 22%, var(--paper));
+}
+.so-theses .so-student__actions a.so-btn.so-related-paper {
+  background: color-mix(in oklch, var(--signal-amber) 34%, var(--paper));
+  color: color-mix(in oklch, var(--signal-amber) 88%, var(--ink));
+  border-color: color-mix(in oklch, var(--signal-amber) 44%, var(--rule));
+}
+.so-theses .so-student__actions a.so-btn.so-related-paper:hover {
+  background: color-mix(in oklch, var(--signal-amber) 48%, var(--paper));
 }
 
 /* ---------- Citations page ---------- */
