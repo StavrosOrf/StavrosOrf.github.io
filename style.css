@@ -323,6 +323,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-pagehead { margin-bottom: 48px; max-width: 780px; }
 .so-pagehead .so-eyebrow { margin-bottom: 10px; }
 .so-pagehead__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.so-pagehead__stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .so-panel .so-pagehead { margin-top: 0; }
 
 .so-rule { border: 0; border-top: 1px solid var(--rule); margin: 64px 0; }
@@ -829,6 +830,18 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   font-family: var(--font-mono);
   text-transform: none; letter-spacing: 0.02em;
   font-weight: 500;
+}
+.so-tag--github {
+  gap: 5px;
+  min-width: 48px;
+  justify-content: center;
+}
+.so-tag--github i {
+  font-size: 10px;
+  color: var(--ink-3);
+}
+.so-tag--github-total {
+  min-width: 62px;
 }
 
 /* ---------- Year section (publications page) ---------- */

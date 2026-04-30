@@ -47,6 +47,19 @@
   const formatCompactNumber = (value) =>
     new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
 
+  const updateIndicator = (element, countSelector, label, value) => {
+    const formatted = formatCompactNumber(value);
+    const countEl = element.querySelector(countSelector);
+
+    if (countEl) {
+      countEl.textContent = formatted;
+    } else {
+      element.textContent = `${label} ${formatted}`;
+    }
+
+    element.setAttribute('aria-label', `${label} ${formatted}`);
+  };
+
   const updateGitHubIndicators = async () => {
     const projects = document.querySelectorAll('[data-github-repo]');
     if (!projects.length) {
@@ -76,16 +89,67 @@
 
           const data = await response.json();
           if (typeof data.stargazers_count === 'number') {
-            starsEl.textContent = `GitHub stars ${formatCompactNumber(data.stargazers_count)}`;
+            updateIndicator(starsEl, '[data-github-stars-count]', 'GitHub stars', data.stargazers_count);
           }
           if (typeof data.forks_count === 'number') {
-            forksEl.textContent = `Forks ${formatCompactNumber(data.forks_count)}`;
+            updateIndicator(forksEl, '[data-github-forks-count]', 'Forks', data.forks_count);
           }
         } catch (error) {
           // Keep the static fallback values if the API request fails.
         }
       })
     );
+  };
+
+  const updateGitHubAccountTotals = async () => {
+    const starsEl = document.querySelector('[data-github-total-stars]');
+    const forksEl = document.querySelector('[data-github-total-forks]');
+
+    if (!starsEl || !forksEl) {
+      return;
+    }
+
+    let page = 1;
+    let totalStars = 0;
+    let totalForks = 0;
+
+    try {
+      while (page <= 10) {
+        const response = await fetch(`https://api.github.com/users/StavrosOrf/repos?per_page=100&page=${page}`, {
+          headers: {
+            Accept: 'application/vnd.github+json'
+          }
+        });
+
+        if (!response.ok) {
+          return;
+        }
+
+        const repos = await response.json();
+        if (!Array.isArray(repos) || !repos.length) {
+          break;
+        }
+
+        repos.forEach((repo) => {
+          if (typeof repo.stargazers_count === 'number') {
+            totalStars += repo.stargazers_count;
+          }
+          if (typeof repo.forks_count === 'number') {
+            totalForks += repo.forks_count;
+          }
+        });
+
+        if (repos.length < 100) {
+          break;
+        }
+        page += 1;
+      }
+
+      updateIndicator(starsEl, '[data-github-total-stars-count]', 'Total GitHub stars', totalStars);
+      updateIndicator(forksEl, '[data-github-total-forks-count]', 'Total forks', totalForks);
+    } catch (error) {
+      // Keep the loading fallback if the API request fails.
+    }
   };
 
   const setupSectionNavigation = () => {
@@ -213,5 +277,6 @@
     });
     setupSectionNavigation();
     updateGitHubIndicators();
+    updateGitHubAccountTotals();
   });
 })();
