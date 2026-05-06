@@ -36,7 +36,10 @@ window.citeEntries = {
     bibtex: `@misc{orfanoudakis2026savgo,
   title = {SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control},
   author = {Orfanoudakis, Stavros and Vergara, Pedro P.},
-  year = {2026}
+  year = {2026},
+  eprint = {2605.00787},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2605.00787}
 }`
   },
   orfanoudakis2025pirl: {

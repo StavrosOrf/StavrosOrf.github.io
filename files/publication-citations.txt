@@ -4,7 +4,7 @@ Gao, S., Orfanoudakis, S., Hou, S., Palensky, P., & Vergara, P. P. (2026). Topol
 
 Gao, T., Orfanoudakis, S., Lin, N., Isufi, E., Daamen, W., & Hoogendoorn, S. P. (2026). Flow Matching Policy with Entropy Regularization. arXiv:2603.17685. Under review at ICML 2026.
 
-Orfanoudakis, S., & Vergara, P. P. (2026). SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control. Manuscript under review for IJCAI.
+Orfanoudakis, S., & Vergara, P. P. (2026). SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control. arXiv:2605.00787. Manuscript under review for IJCAI.
 
 Orfanoudakis, S., Oliehoek, F. A., Palensky, P., & Vergara, P. P. (2025). Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints. arXiv:2510.12335. Second revision at Applied Energy.
 
