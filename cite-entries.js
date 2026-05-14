@@ -1,4 +1,16 @@
 window.citeEntries = {
+  li2026communityvehicle: {
+    title: 'Community-to-Vehicle: Integrating Electric Vehicles into Energy Communities -- A Swiss Case Study',
+    bibtex: `@misc{li2026communityvehicle,
+  title = {Community-to-Vehicle: Integrating Electric Vehicles into Energy Communities -- A Swiss Case Study},
+  author = {Na Li and Dong Liu and Stavros Orfanoudakis and Özge Okur and N. K. Panda and Pedro P. Vergara and Binod Koirala},
+  year = {2026},
+  eprint = {2605.05976},
+  archivePrefix = {arXiv},
+  primaryClass = {eess.SY},
+  url = {https://arxiv.org/abs/2605.05976}
+}`
+  },
   orfanoudakis2026learningrouteelectrictrucks: {
     title: 'Learning to Route Electric Trucks Under Operational Uncertainty',
     bibtex: `@misc{orfanoudakis2026learningrouteelectrictrucks,
@@ -176,21 +188,31 @@ window.citeEntries = {
 }`
   },
   orfanoudakis2026dispatch: {
-    title: 'Can AI Accelerate EV Dispatch?',
-    bibtex: `@misc{orfanoudakis2026dispatch,
-  title = {Can AI Accelerate EV Dispatch?},
-  author = {Orfanoudakis, Stavros and Elders, B. and Palensky, Peter and Vergara, Pedro P.},
+    title: 'Can A.I. Revolutionize EV Dispatch?',
+    bibtex: `@inproceedings{orfanoudakis2026dispatch,
+  author = {Orfanoudakis, Stavros and Elders, Bob and Palensky, Peter and Vergara, Pedro P.},
+  editor = {Koprinska, Irena and Mendes-Moreira, João and Branco, Paula},
+  title = {Can A.I. Revolutionize EV Dispatch?},
+  booktitle = {Machine Learning and Principles and Practice of Knowledge Discovery in Databases},
   year = {2026},
-  note = {Workshop paper, ECML PKDD Workshop on Machine Learning for Power Systems}
+  publisher = {Springer Nature Switzerland},
+  pages = {11--25},
+  isbn = {978-3-032-19102-1},
+  doi = {10.1007/978-3-032-19102-1_1}
 }`
   },
   eland2026saferl: {
     title: 'Safe Reinforcement Learning for V2G-Enabled Electric Vehicle Aggregators',
-    bibtex: `@misc{eland2026saferl,
-  title = {Safe Reinforcement Learning for {V2G}-Enabled Electric Vehicle Aggregators},
+    bibtex: `@inproceedings{eland2026saferl,
   author = {Eland, Ruben and Orfanoudakis, Stavros and Vergara, Pedro P.},
+  editor = {Koprinska, Irena and Mendes-Moreira, João and Branco, Paula},
+  title = {Safe Reinforcement Learning for {V2G}-Enabled Electric Vehicle Aggregators},
+  booktitle = {Machine Learning and Principles and Practice of Knowledge Discovery in Databases},
   year = {2026},
-  note = {Workshop paper, ECML PKDD Workshop on Machine Learning for Power Systems}
+  publisher = {Springer Nature Switzerland},
+  pages = {76--91},
+  isbn = {978-3-032-19102-1},
+  doi = {10.1007/978-3-032-19102-1_5}
 }`
   },
   ravanbach2024v2gtool: {
