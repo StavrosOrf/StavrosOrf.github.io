@@ -56,12 +56,15 @@ window.citeEntries = {
   },
   orfanoudakis2025pirl: {
     title: 'Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints',
-    bibtex: `@misc{orfanoudakis2025pirl,
+    bibtex: `@article{orfanoudakis2025pirl,
   title = {Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints},
   author = {Orfanoudakis, Stavros and Oliehoek, Frans A. and Palensky, Peter and Vergara, Pedro P.},
-  year = {2025},
-  eprint = {2510.12335},
-  archivePrefix = {arXiv}
+  journal = {Applied Energy},
+  volume = {421},
+  pages = {128224},
+  year = {2026},
+  doi = {10.1016/j.apenergy.2026.128224},
+  url = {https://www.sciencedirect.com/science/article/pii/S0306261926008780}
 }`
   },
   orfanoudakis2025llmev: {

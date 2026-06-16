@@ -6,11 +6,11 @@ Gao, T., Orfanoudakis, S., Lin, N., Isufi, E., Daamen, W., & Hoogendoorn, S. P. 
 
 Orfanoudakis, S., & Vergara, P. P. (2026). SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control. arXiv:2605.00787. Manuscript under review for IJCAI.
 
-Orfanoudakis, S., Oliehoek, F. A., Palensky, P., & Vergara, P. P. (2025). Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints. arXiv:2510.12335. Second revision at Applied Energy.
-
 Orfanoudakis, S., Palensky, P., & Vergara, P. P. (2025). Optimizing Electric Vehicles Charging Using Large Language Models and Graph Neural Networks. arXiv:2502.03067. Second revision at International Journal of Electrical Power and Energy Systems.
 
 JOURNAL PUBLICATIONS
+
+Orfanoudakis, S., Oliehoek, F. A., Palensky, P., & Vergara, P. P. (2026). Physics-informed reinforcement learning for large-scale EV smart charging considering distribution network voltage constraints. Applied Energy, 421, 128224. https://doi.org/10.1016/j.apenergy.2026.128224
 
 Orfanoudakis, S., Panda, N. K., Palensky, P., & Vergara, P. P. (2026). A graph neural network enhanced decision transformer for efficient optimization in dynamic smart charging environments. Energy and AI, 23, 100679. https://doi.org/10.1016/j.egyai.2026.100679
 
