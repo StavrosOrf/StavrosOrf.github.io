@@ -2,10 +2,6 @@ UNDER REVIEW
 
 Gao, S., Orfanoudakis, S., Hou, S., Palensky, P., & Vergara, P. P. (2026). Topology-Aware Graph Reinforcement Learning for Energy Storage Systems Optimal Dispatch in Distribution Networks. arXiv:2603.26264. Under review at Energy and AI.
 
-Gao, T., Orfanoudakis, S., Lin, N., Isufi, E., Daamen, W., & Hoogendoorn, S. P. (2026). Flow Matching Policy with Entropy Regularization. arXiv:2603.17685. Under review at ICML 2026.
-
-Orfanoudakis, S., & Vergara, P. P. (2026). SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control. arXiv:2605.00787. Manuscript under review for IJCAI.
-
 Orfanoudakis, S., Palensky, P., & Vergara, P. P. (2025). Optimizing Electric Vehicles Charging Using Large Language Models and Graph Neural Networks. arXiv:2502.03067. Second revision at International Journal of Electrical Power and Energy Systems.
 
 JOURNAL PUBLICATIONS
@@ -31,6 +27,12 @@ Lin, N., Orfanoudakis, S., Ordonez Cardenas, N., Giraldo, J. S., & Vergara, P. P
 Vogiatzis, A., Orfanoudakis, S., Chalkiadakis, G., Moirogiorgou, K., & Zervakis, M. (2023). Novel meta-learning techniques for the multiclass image classification problem. Sensors, 23(1), 9. https://doi.org/10.3390/s23010009
 
 CONFERENCE PUBLICATIONS
+
+Gao, T., Orfanoudakis, S., Lin, N., Daamen, W., Hoogendoorn, S. P., & Isufi, E. (2026). Flow matching policy optimization with mirror descent and entropy constraints. In Advances in Neural Information Processing Systems (NeurIPS). arXiv:2603.17685.
+
+Orfanoudakis, S., & Vergara, P. P. (2026). SAVGO: Learning state-action value geometry with cosine similarity for continuous control. In Proceedings of the 14th Hellenic Conference on Artificial Intelligence (SETN). Best Student Paper Award. arXiv:2605.00787.
+
+Li, N., Liu, D., Orfanoudakis, S., Okur, Ö., Panda, N. K., Vergara, P. P., & Koirala, B. (2026). Community-to-vehicle: Integrating electric vehicles into energy communities -- A Swiss case study. In IEEE PES Innovative Smart Grid Technologies Europe (ISGT Europe). arXiv:2605.05976.
 
 Orfanoudakis, S., Elders, B., Palensky, P., & Vergara, P. P. (2026). Can AI Accelerate EV Dispatch? Workshop paper, ECML PKDD Workshop on Machine Learning for Power Systems.
 

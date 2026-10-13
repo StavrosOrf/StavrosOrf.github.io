@@ -1,9 +1,10 @@
 window.citeEntries = {
   li2026communityvehicle: {
     title: 'Community-to-Vehicle: Integrating Electric Vehicles into Energy Communities -- A Swiss Case Study',
-    bibtex: `@misc{li2026communityvehicle,
+    bibtex: `@inproceedings{li2026communityvehicle,
   title = {Community-to-Vehicle: Integrating Electric Vehicles into Energy Communities -- A Swiss Case Study},
-  author = {Na Li and Dong Liu and Stavros Orfanoudakis and Özge Okur and N. K. Panda and Pedro P. Vergara and Binod Koirala},
+  author = {Li, Na and Liu, Dong and Orfanoudakis, Stavros and Okur, Özge and Panda, N. K. and Vergara, Pedro P. and Koirala, Binod},
+  booktitle = {IEEE PES Innovative Smart Grid Technologies Europe (ISGT Europe)},
   year = {2026},
   eprint = {2605.05976},
   archivePrefix = {arXiv},
@@ -34,24 +35,28 @@ window.citeEntries = {
 }`
   },
   gao2026flowmatching: {
-    title: 'Flow Matching Policy with Entropy Regularization',
-    bibtex: `@misc{gao2026flowmatching,
-  title = {Flow Matching Policy with Entropy Regularization},
-  author = {Gao, Ting and Orfanoudakis, Stavros and Lin, Nan and Isufi, Elvin and Daamen, Winnie and Hoogendoorn, Serge P.},
+    title: 'Flow Matching Policy Optimization with Mirror Descent and Entropy Constraints',
+    bibtex: `@inproceedings{gao2026flowmatching,
+  title = {Flow Matching Policy Optimization with Mirror Descent and Entropy Constraints},
+  author = {Gao, Ting and Orfanoudakis, Stavros and Lin, Nan and Daamen, Winnie and Hoogendoorn, Serge P. and Isufi, Elvin},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year = {2026},
   eprint = {2603.17685},
-  archivePrefix = {arXiv}
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2603.17685}
 }`
   },
   orfanoudakis2026savgo: {
     title: 'SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control',
-    bibtex: `@misc{orfanoudakis2026savgo,
+    bibtex: `@inproceedings{orfanoudakis2026savgo,
   title = {SAVGO: Learning State-Action Value Geometry with Cosine Similarity for Continuous Control},
   author = {Orfanoudakis, Stavros and Vergara, Pedro P.},
+  booktitle = {Proceedings of the 14th Hellenic Conference on Artificial Intelligence (SETN)},
   year = {2026},
   eprint = {2605.00787},
   archivePrefix = {arXiv},
-  url = {https://arxiv.org/abs/2605.00787}
+  url = {https://arxiv.org/abs/2605.00787},
+  note = {Best Student Paper Award}
 }`
   },
   orfanoudakis2025pirl: {

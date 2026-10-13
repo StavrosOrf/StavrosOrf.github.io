@@ -1,8 +1,8 @@
 (() => {
   const storageKey = 'so-theme';
 
-  const getPreferredTheme = () =>
-    window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  // Dark is the site's default; a visitor's explicit toggle choice is remembered.
+  const defaultTheme = 'dark';
 
   const getStoredTheme = () => {
     try {
@@ -41,7 +41,7 @@
     });
   };
 
-  const initialTheme = getStoredTheme() || document.documentElement.dataset.theme || getPreferredTheme();
+  const initialTheme = getStoredTheme() || document.documentElement.dataset.theme || defaultTheme;
   applyTheme(initialTheme);
 
   const formatCompactNumber = (value) =>
@@ -265,7 +265,55 @@
     updateActiveTabByScrollPosition();
   };
 
+  // Show the newest N news items (photo cards count first); older timeline entries
+  // move into an always-visible, independently scrolling "Earlier news" panel.
+  const setupNewsArchive = () => {
+    const section = document.querySelector('[data-news]');
+    const timeline = section?.querySelector('.so-timeline');
+    if (!section || !timeline) {
+      return;
+    }
+
+    const limit = Number.parseInt(section.dataset.newsVisible, 10) || 5;
+    const featuredCount = section.querySelectorAll('.so-newscard').length;
+    const items = Array.from(timeline.querySelectorAll(':scope > .so-tl-item'));
+    const older = items.slice(Math.max(0, limit - featuredCount));
+    if (!older.length) {
+      return;
+    }
+
+    const yearOf = (item) => item.querySelector('.so-tl-year')?.textContent.trim() || '';
+    const range = `${yearOf(older[older.length - 1])} – ${yearOf(older[0])}`;
+
+    const archive = document.createElement('div');
+    archive.className = 'so-news-archive';
+    archive.innerHTML = `
+      <div class="so-news-archive__head">
+        <span class="so-eyebrow">Earlier news</span>
+        <span class="so-news-archive__range">${range}</span>
+      </div>
+      <div class="so-news-archive__scroll" tabindex="0" role="region" aria-label="Earlier news">
+        <div class="so-timeline so-timeline--archive"></div>
+      </div>
+      <div class="so-news-archive__hint" aria-hidden="true"><i class="fas fa-chevron-down"></i>Scroll for more</div>`;
+
+    const list = archive.querySelector('.so-timeline--archive');
+    older.forEach((item) => list.appendChild(item));
+    timeline.after(archive);
+
+    const scroller = archive.querySelector('.so-news-archive__scroll');
+    const updateFades = () => {
+      const max = scroller.scrollHeight - scroller.clientHeight;
+      scroller.classList.toggle('is-scrolled', scroller.scrollTop > 4);
+      archive.classList.toggle('is-end', scroller.scrollTop >= max - 4);
+    };
+    scroller.addEventListener('scroll', updateFades, { passive: true });
+    window.addEventListener('resize', updateFades);
+    updateFades();
+  };
+
   document.addEventListener('DOMContentLoaded', () => {
+    setupNewsArchive();
     applyTheme(document.documentElement.dataset.theme || initialTheme);
 
     document.querySelectorAll('[data-theme-toggle]').forEach((button) => {

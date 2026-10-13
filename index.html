@@ -1,14 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stavros Orfanoudakis</title>
-<meta name="description" content="Stavros Orfanoudakis — Research Fellow at the Power Systems Laboratory, ETH Zürich. Reinforcement learning and physics-informed machine learning for power systems." />
+<meta name="description" content="Stavros Orfanoudakis — Postdoctoral Researcher in the Intelligent Electrical Power Grids group, TU Delft. Reinforcement learning and physics-informed machine learning for power systems." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://www.stavrosorfanoudakis.com/" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Stavros Orfanoudakis" />
+<meta property="og:title" content="Stavros Orfanoudakis — Postdoctoral Researcher, TU Delft" />
+<meta property="og:description" content="Reinforcement learning, physics-informed ML, and LLMs &amp; GNNs for power and energy systems. Publications, open-source projects, and teaching." />
+<meta property="og:url" content="https://www.stavrosorfanoudakis.com/" />
+<meta property="og:image" content="https://www.stavrosorfanoudakis.com/figures/og-image-dark.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Stavros Orfanoudakis — Postdoctoral Researcher, Intelligent Electrical Power Grids, TU Delft" />
+<meta property="profile:first_name" content="Stavros" />
+<meta property="profile:last_name" content="Orfanoudakis" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Stavros Orfanoudakis — Postdoctoral Researcher, TU Delft" />
+<meta name="twitter:description" content="Reinforcement learning, physics-informed ML, and LLMs &amp; GNNs for power and energy systems." />
+<meta name="twitter:image" content="https://www.stavrosorfanoudakis.com/figures/og-image-dark.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Stavros Orfanoudakis",
+  "url": "https://www.stavrosorfanoudakis.com/",
+  "image": "https://www.stavrosorfanoudakis.com/figures/stavros_profile.webp",
+  "jobTitle": "Postdoctoral Researcher",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Intelligent Electrical Power Grids group, Delft University of Technology",
+    "url": "https://www.tudelft.nl/en/eemcs/the-faculty/departments/electrical-sustainable-energy/intelligent-electrical-power-grids-iepg-group",
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "Delft University of Technology",
+      "url": "https://www.tudelft.nl/"
+    }
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Delft University of Technology",
+      "url": "https://www.tudelft.nl/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Technical University of Crete",
+      "url": "https://www.tuc.gr/"
+    }
+  ],
+  "knowsAbout": [
+    "Reinforcement learning",
+    "Physics-informed machine learning",
+    "Graph neural networks",
+    "Large language models",
+    "Power systems",
+    "Electric vehicle smart charging",
+    "Multi-agent systems"
+  ],
+  "award": [
+    "PhD cum laude, Delft University of Technology (2026)",
+    "Best Student Paper Award, SETN 2026",
+    "Best PowerWeb Paper Award 2025, TU Delft",
+    "Editor's Choice 2025, Nature Communications Engineering",
+    "1st place, Power Trading Agent Competition (PowerTAC) 2020",
+    "2nd place, Power Trading Agent Competition (PowerTAC) 2021"
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=flE6u1oAAAAJ",
+    "https://orcid.org/0000-0002-0767-9488",
+    "https://www.linkedin.com/in/stavros-orfanoudakis/",
+    "https://dblp.org/pid/297/4593.html",
+    "https://www.researchgate.net/profile/Stavros-Orfanoudakis",
+    "https://github.com/StavrosOrf"
+  ]
+}
+</script>
 <link rel="icon" type="image/png" href="figures/letter-s.png" />
-<script>try{const t=localStorage.getItem('so-theme');if(t){document.documentElement.dataset.theme=t}else if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.dataset.theme='dark'}}catch(e){}</script>
+<script>try{const t=localStorage.getItem('so-theme');if(t){document.documentElement.dataset.theme=t}}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,7 +95,7 @@
       <span class="so-nav__mono">S.</span>
       <span class="so-nav__word">
         <span class="so-nav__name">Stavros Orfanoudakis</span>
-        <span class="so-nav__sub">Research Fellow · ETH Zürich</span>
+        <span class="so-nav__sub">Postdoctoral Researcher · TU Delft</span>
       </span>
     </a>
     <div class="so-nav__actions">
@@ -43,13 +118,13 @@
   <section id="home" class="so-panel so-panel--home so-panel--active" data-nav-section>
 <section class="so-intro">
     <div class="so-intro__portrait">
-      <img src="figures/stavros_profile.jpeg" alt="Stavros Orfanoudakis" />
+      <img src="figures/stavros_profile.webp" width="600" height="571" alt="Stavros Orfanoudakis" fetchpriority="high" />
     </div>
     <div class="so-intro__text">
       <h1 class="so-h1">Stavros Orfanoudakis</h1>
-      <div class="so-intro__role">Research Fellow · Power Systems Laboratory, ETH Zürich</div>
+      <div class="so-intro__role">Postdoctoral Researcher · Intelligent Electrical Power Grids, TU Delft</div>
       <p>
-        I am a Research Fellow at the <em>Power Systems Laboratory</em>, ETH Zürich, working on reinforcement learning, graph neural networks, large language models, and physics-informed machine learning for power and energy systems, with a focus on scalable and trustworthy AI for real-world operation.
+        I am a Postdoctoral Researcher in the <em>Intelligent Electrical Power Grids</em> group at TU Delft, working on reinforcement learning, graph neural networks, large language models, and physics-informed machine learning for power and energy systems, with a focus on scalable and trustworthy AI for real-world operation.
       </p>
     </div>
     <div class="so-intro__interests">
@@ -100,7 +175,7 @@
 
   <hr class="so-rule" />
 
-  <section class="so-section">
+  <section class="so-section so-news" data-news data-news-visible="5">
     <div class="so-sectionhead">
       <div class="so-eyebrow">News</div>
       <h2 class="so-h2">Recent Milestones</h2>
@@ -108,7 +183,7 @@
     <div class="so-newsfeature">
       <article class="so-newscard so-newscard--honor">
         <figure class="so-newscard__media">
-          <img src="figures/news_phd_defense.jpg" alt="PhD defense ceremony at TU Delft: Stavros Orfanoudakis stands before the doctoral committee, with the thesis title on screen" loading="lazy" />
+          <img src="figures/news_phd_defense.webp" width="1200" height="675" alt="PhD defense ceremony at TU Delft: Stavros Orfanoudakis stands before the doctoral committee, with the thesis title on screen" loading="lazy" />
         </figure>
         <div class="so-newscard__body">
           <div class="so-newscard__meta">
@@ -124,7 +199,7 @@
       </article>
       <article class="so-newscard so-newscard--honor">
         <figure class="so-newscard__media">
-          <img src="figures/news_setn2026_award.jpg" alt="Receiving the Best Student Paper Award on stage at SETN 2026 in Chania, Crete" loading="lazy" />
+          <img src="figures/news_setn2026_award.webp" width="1024" height="576" alt="Receiving the Best Student Paper Award on stage at SETN 2026 in Chania, Crete" loading="lazy" />
         </figure>
         <div class="so-newscard__body">
           <div class="so-newscard__meta">
@@ -137,13 +212,18 @@
       </article>
     </div>
     <div class="so-timeline">
-      <div class="so-tl-item">
-        <div class="so-tl-year">FEB 2026</div>
-        <div class="so-tl-body">Started as <em>Research Fellow</em> at the Power Systems Laboratory, <em>ETH Zürich</em>, working on LLMs and physics-informed ML for power systems.</div>
+      <div class="so-tl-item so-tl-item--media">
+        <a class="so-tl-thumb" href="figures/news_powerweb_award_full.webp" target="_blank" rel="noopener" aria-label="Open full photo of the Best PowerWeb Paper 2025 award">
+          <img src="figures/news_powerweb_award.webp" width="420" height="420" alt="Holding the Best PowerWeb Paper 2025 winner board at TU Delft" loading="lazy" />
+        </a>
+        <div class="so-tl-content">
+          <div class="so-tl-year">MAR 2026</div>
+          <div class="so-tl-body">Awarded <em>Best PowerWeb Paper Award 2025</em> and nominated for Best Energy Paper for our <a href="#publications">Graph-RL EV coordination</a> work.</div>
+        </div>
       </div>
       <div class="so-tl-item">
-        <div class="so-tl-year">JAN 2026</div>
-        <div class="so-tl-body">Awarded <em>Best PowerWeb Paper Award 2025</em> and nominated for Best Energy Paper for our <a href="#publications">Graph-RL EV coordination</a> work.</div>
+        <div class="so-tl-year">FEB 2026</div>
+        <div class="so-tl-body">Started as <em>Research Scholar</em> at the Power Systems Laboratory, <em>ETH Zürich</em>, working on LLMs and physics-informed ML for power systems.</div>
       </div>
       <div class="so-tl-item">
         <div class="so-tl-year">DEC 2025</div>
@@ -169,6 +249,14 @@
         <div class="so-tl-year">APR 2023</div>
         <div class="so-tl-body">Started my PhD at TU Delft, Intelligent Electrical Power Grids group.</div>
       </div>
+      <div class="so-tl-item">
+        <div class="so-tl-year">OCT 2021</div>
+        <div class="so-tl-body">Our autonomous broker <em>TUC-TAC</em> finished <em>2nd</em> in the <em>Power Trading Agent Competition (PowerTAC) 2021</em>: <a href="https://www.ece.tuc.gr/en/distinctions/item/tuc-tac-finishes-at-second-place-in-the-2021-powertac-international-competition" target="_blank" rel="noopener">TU Crete news</a> · <a href="https://powertac.org/log_archive/PowerTAC_2021_finals.html" target="_blank" rel="noopener">official results</a>.</div>
+      </div>
+      <div class="so-tl-item">
+        <div class="so-tl-year">NOV 2020</div>
+        <div class="so-tl-body"><em>TUC-TAC</em> won <em>1st place</em> in the international <em>PowerTAC 2020</em> automated electricity-trading competition: <a href="https://powertac.org/log_archive/PowerTAC_2020_finals.html" target="_blank" rel="noopener">official results</a> · <a href="#pub-powertac">our EUMAS paper</a>.</div>
+      </div>
     </div>
   </section>
 
@@ -190,7 +278,7 @@
           <span class="so-tag so-tag--honor">Best PowerWeb Paper Award 2025</span>
         </div>
         <figure class="so-pub__figure">
-          <img src="figures/evgnn_frame.png" alt="Figure from Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks" loading="lazy" />
+          <img src="figures/evgnn_frame.webp" width="900" height="553" alt="Figure from Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks" loading="lazy" />
         </figure>
         <h3 class="so-pub__title"><a href="https://doi.org/10.1038/s44172-025-00457-8" target="_blank" rel="noopener">"Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks"</a></h3>
         <div class="so-pub__byline">
@@ -206,7 +294,7 @@
 
       <article class="so-pub">
         <figure class="so-pub__figure">
-          <img src="figures/gnn-dt_frame.png" alt="Figure from A Graph Neural Network-Enhanced Decision Transformer for Efficient Optimization in Dynamic Smart Charging Environments" loading="lazy" />
+          <img src="figures/gnn-dt_frame.webp" width="900" height="301" alt="Figure from A Graph Neural Network-Enhanced Decision Transformer for Efficient Optimization in Dynamic Smart Charging Environments" loading="lazy" />
         </figure>
         <h3 class="so-pub__title"><a href="https://doi.org/10.1016/j.egyai.2026.100679" target="_blank" rel="noopener">"A Graph Neural Network-Enhanced Decision Transformer for Efficient Optimization in Dynamic Smart Charging Environments"</a></h3>
         <div class="so-pub__byline">
@@ -222,7 +310,7 @@
 
       <article class="so-pub">
         <figure class="so-pub__figure">
-          <img src="figures/pi_rl_frame.png" alt="Figure from Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints" loading="lazy" />
+          <img src="figures/pi_rl_frame.webp" width="900" height="397" alt="Figure from Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints" loading="lazy" />
         </figure>
         <h3 class="so-pub__title"><a href="https://doi.org/10.1016/j.apenergy.2026.128224" target="_blank" rel="noopener">"Physics-Informed Reinforcement Learning for Large-Scale EV Smart Charging Considering Distribution Network Voltage Constraints"</a></h3>
         <div class="so-pub__byline">
@@ -238,7 +326,7 @@
 
       <article class="so-pub">
         <figure class="so-pub__figure">
-          <img src="figures/ev2gym_frame.png" alt="Figure from EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking" loading="lazy" />
+          <img src="figures/ev2gym_frame.webp" width="1000" height="290" alt="Figure from EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking" loading="lazy" />
         </figure>
         <h3 class="so-pub__title"><a href="https://doi.org/10.1109/TITS.2024.3510945" target="_blank" rel="noopener">"EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking"</a></h3>
         <div class="so-pub__byline">
@@ -270,19 +358,10 @@
   <section class="so-year">
     <div class="so-year__head">
       <span class="so-year__num">Under review</span>
-      <span class="so-year__count">Preprints · 6</span>
+      <span class="so-year__count">Preprints · 3</span>
     </div>
     <div class="so-publist">
       <div class="so-pubyear">2026</div>
-
-      <article class="so-pub">
-        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2605.05976" target="_blank" rel="noopener">"Community-to-Vehicle: Integrating Electric Vehicles into Energy Communities -- A Swiss Case Study"</a></h3>
-        <div class="so-pub__byline">Na Li, Dong Liu, <u>Stavros Orfanoudakis</u>, Özge Okur, N. K. Panda, Pedro P. Vergara, Binod Koirala.</div>
-        <div class="so-pub__links">
-          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2605.05976" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
-          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="li2026communityvehicle"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
-        </div>
-      </article>
 
       <article class="so-pub">
         <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2604.26566" target="_blank" rel="noopener">"Learning to Route Electric Trucks Under Operational Uncertainty"</a></h3>
@@ -300,29 +379,6 @@
         <div class="so-pub__links">
           <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2603.26264" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
           <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="gao2026topologyaware"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
-        </div>
-      </article>
-
-      <article class="so-pub">
-        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2603.17685" target="_blank" rel="noopener">"Flow Matching Policy with Entropy Regularization"</a></h3>
-        <div class="so-pub__byline">Ting Gao, <u>Stavros Orfanoudakis</u>, Nan Lin, Elvin Isufi, Winnie Daamen, Serge P. Hoogendoorn.</div>
-        <div class="so-pub__links">
-          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2603.17685" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
-          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="gao2026flowmatching"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
-        </div>
-      </article>
-
-      <article class="so-pub">
-        <div class="so-pub__tags">
-          <span class="so-tag so-tag--honor">Best Student Paper Award · SETN 2026</span>
-        </div>
-        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2605.00787" target="_blank" rel="noopener">"SAVGO: Learning State–Action Value Geometry with Cosine Similarity for Continuous Control"</a></h3>
-        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Pedro P. Vergara.
-          <em>14th Hellenic Conference on Artificial Intelligence (SETN)</em>, 2026.</div>
-        <div class="so-pub__links">
-          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2605.00787" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
-          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/DistanceRL" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
-          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2026savgo"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
         </div>
       </article>
 
@@ -462,10 +518,41 @@
   <section class="so-year">
     <div class="so-year__head">
       <span class="so-year__num">Conference publications</span>
-      <span class="so-year__count">Peer-reviewed · 9</span>
+      <span class="so-year__count">Peer-reviewed · 12</span>
     </div>
     <div class="so-publist">
       <div class="so-pubyear">2026</div>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2603.17685" target="_blank" rel="noopener">"Flow Matching Policy Optimization with Mirror Descent and Entropy Constraints"</a></h3>
+        <div class="so-pub__byline">Ting Gao, <u>Stavros Orfanoudakis</u>, Nan Lin, Winnie Daamen, Serge P. Hoogendoorn, Elvin Isufi. <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2026.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2603.17685" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="gao2026flowmatching"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <div class="so-pub__tags">
+          <span class="so-tag so-tag--honor">Best Student Paper Award · SETN 2026</span>
+        </div>
+        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2605.00787" target="_blank" rel="noopener">"SAVGO: Learning State–Action Value Geometry with Cosine Similarity for Continuous Control"</a></h3>
+        <div class="so-pub__byline"><u>Stavros Orfanoudakis</u>, Pedro P. Vergara. <em>Hellenic Conference on Artificial Intelligence (SETN)</em>, 2026.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2605.00787" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://github.com/StavrosOrf/DistanceRL" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i>Code</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="orfanoudakis2026savgo"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
+
+      <article class="so-pub">
+        <h3 class="so-pub__title"><a href="https://arxiv.org/abs/2605.05976" target="_blank" rel="noopener">"Community-to-Vehicle: Integrating Electric Vehicles into Energy Communities -- A Swiss Case Study"</a></h3>
+        <div class="so-pub__byline">Na Li, Dong Liu, <u>Stavros Orfanoudakis</u>, Özge Okur, N. K. Panda, Pedro P. Vergara, Binod Koirala. <em>IEEE PES Innovative Smart Grid Technologies Europe (IEEE PES ISGT Europe)</em>, 2026.</div>
+        <div class="so-pub__links">
+          <a class="so-btn so-btn--secondary so-btn--sm" href="https://arxiv.org/abs/2605.05976" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>arXiv</a>
+          <button class="so-btn so-btn--secondary so-btn--sm so-cite-trigger" type="button" data-cite-key="li2026communityvehicle"><i class="fas fa-quote-right" aria-hidden="true"></i>Cite</button>
+        </div>
+      </article>
 
       <article class="so-pub">
         <h3 class="so-pub__title"><a href="https://doi.org/10.1007/978-3-032-19102-1_1" target="_blank" rel="noopener">"Can A.I. Revolutionize EV Dispatch?"</a></h3>
@@ -585,12 +672,12 @@
 
     <article class="so-project" data-github-repo="StavrosOrf/EV2Gym">
       <a class="so-project__thumb" href="https://github.com/StavrosOrf/EV2Gym" target="_blank" rel="noopener">
-        <img src="figures/ev2gym.png" alt="EV2Gym" />
+        <img src="figures/ev2gym.webp" width="800" height="179" alt="EV2Gym" loading="lazy" />
       </a>
       <div class="so-project__info">
         <div class="so-project__meta">
-          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 201" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>201</span></span>
-          <span class="so-tag so-tag--year so-tag--github" data-github-forks aria-label="Forks 47" title="Forks"><i class="fas fa-code-branch" aria-hidden="true"></i><span data-github-forks-count>47</span></span>
+          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 240" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>240</span></span>
+          <span class="so-tag so-tag--year so-tag--github" data-github-forks aria-label="Forks 55" title="Forks"><i class="fas fa-code-branch" aria-hidden="true"></i><span data-github-forks-count>55</span></span>
           <span class="so-tag so-tag--year">2024</span>
         </div>
         <h2 class="so-h3">EV2Gym</h2>
@@ -608,8 +695,8 @@
       </a>
       <div class="so-project__info">
         <div class="so-project__meta">
-          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 26" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>26</span></span>
-          <span class="so-tag so-tag--year so-tag--github" data-github-forks aria-label="Forks 13" title="Forks"><i class="fas fa-code-branch" aria-hidden="true"></i><span data-github-forks-count>13</span></span>
+          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 34" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>34</span></span>
+          <span class="so-tag so-tag--year so-tag--github" data-github-forks aria-label="Forks 17" title="Forks"><i class="fas fa-code-branch" aria-hidden="true"></i><span data-github-forks-count>17</span></span>
           <span class="so-tag so-tag--year">2024</span>
         </div>
         <h2 class="so-h3">EV-GNN</h2>
@@ -627,7 +714,7 @@
       </a>
       <div class="so-project__info">
         <div class="so-project__meta">
-          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 16" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>16</span></span>
+          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 23" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>23</span></span>
           <span class="so-tag so-tag--year so-tag--github" data-github-forks aria-label="Forks 4" title="Forks"><i class="fas fa-code-branch" aria-hidden="true"></i><span data-github-forks-count>4</span></span>
           <span class="so-tag so-tag--year">2025</span>
         </div>
@@ -640,14 +727,14 @@
       </div>
     </article>
 
-    <article class="so-project" data-github-repo="StavrosOrf/PowerFlowNet">
+    <article class="so-project" data-github-repo="StavrosOrf/PoweFlowNet">
       <a class="so-project__thumb" href="https://github.com/StavrosOrf/PoweFlowNet" target="_blank" rel="noopener">
         <span class="so-project__placeholder">PowerFlowNet</span>
       </a>
       <div class="so-project__info">
         <div class="so-project__meta">
-          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 71" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>71</span></span>
-          <span class="so-tag so-tag--year so-tag--github" data-github-forks aria-label="Forks 12" title="Forks"><i class="fas fa-code-branch" aria-hidden="true"></i><span data-github-forks-count>12</span></span>
+          <span class="so-tag so-tag--year so-tag--github" data-github-stars aria-label="GitHub stars 82" title="GitHub stars"><i class="fas fa-star" aria-hidden="true"></i><span data-github-stars-count>82</span></span>
+          <span class="so-tag so-tag--year so-tag--github" data-github-forks aria-label="Forks 13" title="Forks"><i class="fas fa-code-branch" aria-hidden="true"></i><span data-github-forks-count>13</span></span>
           <span class="so-tag so-tag--year">2023</span>
         </div>
         <h2 class="so-h3">PowerFlowNet</h2>
@@ -660,7 +747,7 @@
 
     <article class="so-project">
       <a class="so-project__thumb" href="https://drive2x.eu/" target="_blank" rel="noopener">
-        <img src="figures/drive2x.png" alt="DRIVE2X" />
+        <img src="figures/drive2x.webp" width="800" height="285" alt="DRIVE2X" loading="lazy" />
       </a>
       <div class="so-project__info">
         <div class="so-project__meta">
@@ -909,12 +996,12 @@
   <div class="so-foot__inner">
     <span class="so-foot__c">© 2026 Stavros Orfanoudakis</span>
     <div class="so-foot__social">
-      <a href="https://scholar.google.com/citations?user=flE6u1oAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="fab fa-google-scholar"></i></a>
-      <a href="https://orcid.org/0000-0002-0767-9488" target="_blank" rel="noopener" title="ORCID"><i class="fab fa-orcid"></i></a>
-      <a href="https://www.linkedin.com/in/stavros-orfanoudakis/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://dblp.org/pid/297/4593.html" target="_blank" rel="noopener" title="DBLP"><i class="fas fa-book-open"></i></a>
-      <a href="https://www.researchgate.net/profile/Stavros-Orfanoudakis?ev=prf_overview" target="_blank" rel="noopener" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
-      <a href="https://github.com/StavrosOrf" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=flE6u1oAAAAJ" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="fab fa-google-scholar" aria-hidden="true"></i></a>
+      <a href="https://orcid.org/0000-0002-0767-9488" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID"><i class="fab fa-orcid" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/stavros-orfanoudakis/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://dblp.org/pid/297/4593.html" target="_blank" rel="noopener" title="DBLP" aria-label="DBLP"><i class="fas fa-book-open" aria-hidden="true"></i></a>
+      <a href="https://www.researchgate.net/profile/Stavros-Orfanoudakis?ev=prf_overview" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate"><i class="fab fa-researchgate" aria-hidden="true"></i></a>
+      <a href="https://github.com/StavrosOrf" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
     </div>
     <span class="so-foot__upd">s.n.orfanoudakis@gmail.com</span>
   </div>
