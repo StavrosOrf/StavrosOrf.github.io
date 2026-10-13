@@ -27,6 +27,11 @@
   --signal-rust:  #9a3b1f;
   --signal-ink:   #1f7a4c;
 
+  --honor-gold:      #c9a227;
+  --honor-gold-ink:  #6e4f05;
+  --honor-gold-soft: #f7ebc4;
+  --honor-gold-line: #dcbc5c;
+
   --font-display: 'Fraunces', 'Times New Roman', Georgia, serif;
   --font-accent:  'Instrument Serif', 'Times New Roman', Georgia, serif;
   --font-body:    'IBM Plex Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -84,6 +89,11 @@ html[data-theme="dark"] {
   --signal-amber: #d6a13a;
   --signal-rust:  #d16a4a;
   --signal-ink:   #5fc487;
+
+  --honor-gold:      #e2b84a;
+  --honor-gold-ink:  #f3d488;
+  --honor-gold-soft: #3a2f13;
+  --honor-gold-line: #84692a;
 
   --sh-hair:  0 1px 0 rgba(0, 0, 0, 0.22);
   --sh-sm:    0 1px 2px rgba(0, 0, 0, 0.26), 0 1px 3px rgba(0, 0, 0, 0.18);
@@ -545,6 +555,72 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-tl-body em { font-family: var(--font-accent); font-style: italic; color: var(--ink-2); }
 .so-tl-body a { color: var(--delft-blue); }
 
+/* ---------- Featured news (photo cards) ---------- */
+.so-newsfeature {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto 22px;
+}
+.so-newscard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid color-mix(in oklch, var(--rule) 74%, transparent);
+  border-top: 3px solid var(--grid-green);
+  background: color-mix(in oklch, var(--paper) 82%, white);
+  border-radius: var(--r-md);
+  box-shadow: var(--sh-sm);
+  overflow: hidden;
+  transition: box-shadow var(--dur-normal) var(--ease-standard), transform var(--dur-normal) var(--ease-standard);
+}
+.so-newscard--honor { border-top-color: var(--honor-gold); }
+.so-newscard:hover { box-shadow: var(--sh-md); transform: translateY(-2px); }
+.so-newscard__media {
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--paper-3);
+  border-bottom: 1px solid color-mix(in oklch, var(--rule) 60%, transparent);
+}
+.so-newscard__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-out);
+}
+.so-newscard:hover .so-newscard__media img { transform: scale(1.03); }
+.so-newscard__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 18px 18px;
+  text-align: center;
+}
+.so-newscard__meta { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.so-newscard__meta .so-tl-year { margin: 0; }
+.so-newscard__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.so-newscard__text { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+.so-newscard__text em { font-family: var(--font-accent); font-style: italic; color: var(--ink-2); }
+.so-newscard__text a { color: var(--delft-blue); }
+@media (max-width: 720px) {
+  .so-newsfeature { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .so-newscard, .so-newscard__media img { transition: none; }
+  .so-newscard:hover, .so-newscard:hover .so-newscard__media img { transform: none; }
+}
+
 /* ---------- Highlights panel alignment ---------- */
 .so-panel--highlights .so-section {
   max-width: 980px;
@@ -823,7 +899,23 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 }
 .so-tag--pub { background: var(--grid-green-3); color: var(--signal-ink); }
 .so-tag--pre { background: color-mix(in oklch, var(--signal-amber) 18%, var(--paper)); color: var(--signal-amber); }
-.so-tag--honor { background: color-mix(in oklch, #8b4ab8 18%, var(--paper)); color: color-mix(in oklch, #8b4ab8 78%, var(--ink)); }
+.so-tag--honor {
+  gap: 5px;
+  background: linear-gradient(135deg,
+    var(--honor-gold-soft) 0%,
+    color-mix(in oklch, var(--honor-gold) 30%, var(--honor-gold-soft)) 55%,
+    var(--honor-gold-soft) 100%);
+  color: var(--honor-gold-ink);
+  box-shadow: inset 0 0 0 1px var(--honor-gold-line);
+}
+.so-tag--honor::before {
+  content: '\f559';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 0.95em;
+  letter-spacing: 0;
+  color: var(--honor-gold);
+}
 .so-tag--year {
   background: transparent; color: var(--ink-3);
   border: 1px solid var(--rule);
