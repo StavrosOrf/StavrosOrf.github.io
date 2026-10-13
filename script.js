@@ -22,6 +22,7 @@
 
   const applyTheme = (theme) => {
     document.documentElement.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#131816' : '#f4f1e8');
     const nextTheme = theme === 'dark' ? 'light' : 'dark';
 
     document.querySelectorAll('[data-theme-toggle]').forEach((button) => {

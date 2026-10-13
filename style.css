@@ -1392,3 +1392,48 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   html { scroll-behavior: auto; }
   .so-panel { transition: none; opacity: 1; transform: none; }
 }
+
+/* ---------- Paper figures & diagram thumbnails ---------- */
+/* Diagrams are drawn for white paper: give them a light card in both themes */
+.so-panel--highlights .so-pub__figure,
+.so-project__thumb--figure {
+  background: #fbfaf6;
+  transition: filter var(--dur-normal) var(--ease-standard),
+              box-shadow var(--dur-normal) var(--ease-standard);
+}
+.so-project__thumb--figure { padding: 14px; }
+/* Dark mode: soften the glare of white figures; full brightness on hover/focus */
+html[data-theme="dark"] .so-panel--highlights .so-pub__figure,
+html[data-theme="dark"] .so-project__thumb--figure {
+  filter: brightness(0.8) saturate(0.92);
+  border-color: color-mix(in oklch, var(--rule) 90%, transparent);
+}
+html[data-theme="dark"] .so-panel--highlights .so-pub:hover .so-pub__figure,
+html[data-theme="dark"] .so-project__thumb--figure:hover,
+html[data-theme="dark"] .so-project__thumb--figure:focus-visible {
+  filter: none;
+}
+
+/* ---------- 404 page ---------- */
+.so-404 {
+  min-height: calc(100vh - var(--nav-h) - var(--foot-h));
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+  text-align: center;
+}
+.so-404__inner { max-width: 620px; }
+.so-404__code {
+  font-family: var(--font-display);
+  font-size: clamp(96px, 22vw, 184px);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  font-variation-settings: "opsz" 144;
+  color: var(--ink-2);
+  margin-bottom: 18px;
+}
+.so-404__code span { color: var(--grid-green); }
+.so-404 .so-h2 { margin: 8px 0 12px; }
+.so-404 .so-lead { margin: 0 auto; }
+.so-404__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 26px; }
