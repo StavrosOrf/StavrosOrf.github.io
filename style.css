@@ -211,7 +211,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   transition: color var(--dur-fast) var(--ease-standard);
 }
 .so-foot__social a:hover { color: var(--grid-green); }
-.so-foot__upd { color: var(--ink-4); }
+.so-foot__email { color: var(--ink-3); max-width: 100%; overflow-wrap: anywhere; }
 
 /* ---------- Page / layout ---------- */
 .so-page {
@@ -1306,7 +1306,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   .so-nav__tab { padding: 6px 10px; font-size: 13px; }
   .so-theme-toggle { min-width: 0; }
   .so-foot__inner { padding: 12px 20px; flex-wrap: wrap; gap: 10px; }
-  .so-foot__upd { display: none; }
+  .so-foot__email { flex-basis: 100%; }
   .so-page { padding: 0; }
   .so-page { gap: 0; }
   .so-panel {
