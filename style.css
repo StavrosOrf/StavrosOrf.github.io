@@ -610,6 +610,7 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
   letter-spacing: -0.01em;
   color: var(--ink);
 }
+.so-newscard__links { display: flex; justify-content: center; margin-top: 4px; }
 .so-newscard__text { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
 .so-newscard__text em { font-family: var(--font-accent); font-style: italic; color: var(--ink-2); }
 .so-newscard__text a { color: var(--delft-blue); }
@@ -1041,6 +1042,8 @@ a:hover { color: var(--delft-blue-2); text-decoration-color: var(--delft-blue-2)
 .so-panel--teaching .so-theses {
   margin-top: 64px;
 }
+.so-panel--teaching .so-theses--projects { margin-top: 44px; }
+.so-theses--projects .so-sectionhead { margin-bottom: 14px; }
 .so-courses .so-students { gap: 14px; }
 .so-courses .so-student {
   padding: 18px 20px;
